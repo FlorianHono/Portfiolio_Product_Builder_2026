@@ -118,7 +118,7 @@ export default function Projets() {
                     Résultat
                   </span>
                   <img
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-contain transition-transform duration-700"
                     alt={p.alt}
                     src={p.img}
                   />
