@@ -18,9 +18,6 @@ const SEO = ({ title, description }) => {
     updateMetaTag('og:title', `${title} | Florian Honoré`, true);
     updateMetaTag('og:type', 'website', true);
     updateMetaTag('og:url', window.location.href, true);
-    updateMetaTag('og:image', `${window.location.origin}/og-image.png`, true);
-    updateMetaTag('twitter:card', 'summary_large_image');
-    updateMetaTag('twitter:image', `${window.location.origin}/og-image.png`);
 
     // JSON-LD Structured Data
     const structuredData = {
