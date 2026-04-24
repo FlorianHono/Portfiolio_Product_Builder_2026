@@ -45,6 +45,8 @@ export default function Contact() {
                 Tu préfères écrire ? <a href="mailto:honoreflorian.dwwm@gmail.com" className="text-on-surface font-bold border-b border-primary hover:text-primary transition-colors">honoreflorian.dwwm@gmail.com</a>
               </p>
 
+              <DinoGame />
+
             </div>
           </div>
 
@@ -93,4 +95,6 @@ export default function Contact() {
     </div>
   );
 }
+
+import DinoGame from '../components/DinoGame';
 
