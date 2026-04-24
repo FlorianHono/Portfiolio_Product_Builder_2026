@@ -17,7 +17,7 @@ export const translations = {
       start: "Démarrer un projet",
       faster: "Plus vite",
       noTech: "Sans équipe tech lourde",
-      description: "Je construis les systèmes que ton équipe n'a pas le temps de créer, automatisations, agents IA, ainsi que des interfaces. Opérationnel en semaines.",
+      description: "Je construis les systèmes que ton équipe n'a pas le temps de créer, automatisations, agents IA, ainsi que des interfaces. Opérationnel en quelques jours.",
       clientText: "Ils ont gagné du temps :"
     },
     services: {
@@ -30,7 +30,7 @@ export const translations = {
       },
       s2: {
         title: "Développement Low-Code",
-        desc: "Une app interne, un back-office, un outil sur mesure. Développé en quelques semaines, pas en plusieurs mois. Sans compromis sur la qualité.",
+        desc: "Une app interne, un back-office, un outil sur mesure. Développé en quelques jours, pas en plusieurs mois. Sans compromis sur la qualité.",
         cta: "Voir un exemple"
       },
       s3: {
@@ -45,7 +45,7 @@ export const translations = {
       i1: { title: "Automations", desc: "Pour que tes processus tournent sans intervention humaine." },
       i2: { title: "Bases de Données", desc: "La colonne vertébrale de chaque produit que je construis." },
       i3: { title: "Intelligence Artificielle", desc: "Des LLMs intégrés directement dans tes outils métier." },
-      i4: { title: "No-Code Front", desc: "Des interfaces pro livrées en semaines, pas en mois." }
+      i4: { title: "No-Code Front", desc: "Des interfaces pro livrées en quelques jours, pas en mois." }
     },
     cta: {
       title: "TU VEUX<br />ALLER PLUS VITE ?",
@@ -75,7 +75,7 @@ export const translations = {
       start: "Start a project",
       faster: "Faster",
       noTech: "Without a heavy tech team",
-      description: "I build the systems your team doesn't have time to create, automations, AI agents, and interfaces. Operational in weeks.",
+      description: "I build the systems your team doesn't have time to create, automations, AI agents, and interfaces. Operational in days.",
       clientText: "They saved time:"
     },
     services: {
@@ -88,7 +88,7 @@ export const translations = {
       },
       s2: {
         title: "Low-Code Development",
-        desc: "Internal apps, back-offices, custom tools. Developed in weeks, not months. No compromise on quality.",
+        desc: "Internal apps, back-offices, custom tools. Developed in days, not months. No compromise on quality.",
         cta: "See an example"
       },
       s3: {
@@ -103,7 +103,7 @@ export const translations = {
       i1: { title: "Automations", desc: "So your processes run without human intervention." },
       i2: { title: "Databases", desc: "The backbone of every product I build." },
       i3: { title: "Artificial Intelligence", desc: "LLMs integrated directly into your business tools." },
-      i4: { title: "No-Code Front", desc: "Pro interfaces delivered in weeks, not months." }
+      i4: { title: "No-Code Front", desc: "Pro interfaces delivered in days, not months." }
     },
     cta: {
       title: "WANT TO<br />MOVE FASTER?",
