@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import CTABanner from '../components/CTABanner';
 import profilePic from '../assets/florian.png';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../translations';
 
 const LogoYottascale = () => (
   <div className="flex items-center gap-3">
@@ -72,6 +74,9 @@ const Marquee = () => {
 };
 
 export default function Accueil() {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+
   useEffect(() => {
     // Subtle parallax effect for hero background
     const handleMouseMove = (e) => {
@@ -116,27 +121,27 @@ export default function Accueil() {
                 </span>
               </h1>
               <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 mb-10">
-                <span className="font-space text-lg md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">Plus vite</span>
+                <span className="font-space text-lg md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">{t('hero.faster')}</span>
                 <span className="hidden md:block w-2 h-2 bg-primary"></span>
-                <span className="font-space text-lg md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">Sans équipe tech lourde</span>
+                <span className="font-space text-lg md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">{t('hero.noTech')}</span>
               </div>
 
               <div className="max-w-xl">
                 <p className="font-space text-lg md:text-xl text-secondary leading-relaxed mb-8 font-light">
-                  Je construis les systèmes que ton équipe n'a pas le temps de créer, automatisations, agents IA, ainsi que des interfaces. <span className="text-primary font-medium italic">Opérationnel en semaines.</span>
+                  {t('hero.description').split('Opérationnel')[0]} <span className="text-primary font-medium italic">{language === 'fr' ? 'Opérationnel en semaines.' : 'Operational in weeks.'}</span>
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 reveal delay-4">
                   <Link to="/projets" className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 py-3 font-space font-bold uppercase tracking-widest text-xs overflow-hidden">
-                    <span className="relative z-10 transition-colors">Voir mes projets</span>
+                    <span className="relative z-10 transition-colors">{t('hero.cta')}</span>
                     <div className="absolute inset-0 bg-[#d94a12] translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                   </Link>
                   <Link to="/contact" className="inline-flex items-center justify-center border-2 border-on-surface px-8 py-3 font-space font-bold uppercase tracking-widest text-xs hover:bg-on-surface hover:text-surface transition-all duration-300">
-                    Démarrer un projet
+                    {t('hero.start')}
                   </Link>
                 </div>
 
                 <div className="mt-10 pt-6 border-t border-outline-variant/30 overflow-hidden w-full max-w-[100vw]">
-                  <p className="font-space text-xs text-outline uppercase tracking-[0.2em] mb-4">Ils ont gagné du temps :</p>
+                  <p className="font-space text-xs text-outline uppercase tracking-[0.2em] mb-4">{t('hero.clientText')}</p>
                   <div className="-mx-2">
                     <Marquee />
                   </div>
@@ -178,45 +183,45 @@ export default function Accueil() {
 
       <section className="px-6 md:px-12 lg:px-24 py-20 border-t-[1px] border-outline-variant/30 bg-surface relative z-20">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 max-w-[1600px] mx-auto">
-          <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface reveal">Services</h2>
+          <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface reveal">{t('services.title')}</h2>
           <div className="max-w-md mt-6 md:mt-0 font-space text-secondary text-sm leading-relaxed uppercase tracking-widest border-l-[2px] border-primary pl-6 reveal delay-1">
-            Tu veux aller vite, sans recruter une équipe tech. Je construis ce dont tu as besoin et tu gardes la main.
+            {t('services.intro')}
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1600px] mx-auto">
           <div className="border-t-[1px] border-outline-variant/30 pt-8 flex flex-col group hover:border-primary transition-colors duration-500">
             <span className="font-space text-xs font-bold text-primary mb-4 block">01</span>
-            <h3 className="font-inter font-bold text-2xl uppercase mb-6 text-on-surface">Automatisation IA</h3>
+            <h3 className="font-inter font-bold text-2xl uppercase mb-6 text-on-surface">{t('services.s1.title')}</h3>
             <p className="text-secondary font-space text-sm leading-relaxed mb-8 flex-grow">
-              Tes tâches répétitives tournent en boucle et bouffent du temps à ton équipe. Je les automatise avec l'IA (prospection, reporting, traitement de données) sans que tu aies à t'en occuper.
+              {t('services.s1.desc')}
             </p>
             <Link to="/projets" className="inline-flex items-center gap-2 font-space text-xs uppercase tracking-widest text-on-surface group-hover:text-primary transition-colors mb-6 mt-auto w-fit">
-              Voir un exemple <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+              {t('services.s1.cta')} <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
             </Link>
             <div className="h-[2px] w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
           </div>
 
           <div className="border-t-[1px] border-outline-variant/30 pt-8 flex flex-col group hover:border-primary transition-colors duration-500">
             <span className="font-space text-xs font-bold text-primary mb-4 block">02</span>
-            <h3 className="font-inter font-bold text-2xl uppercase mb-6 text-on-surface">Développement Low-Code</h3>
+            <h3 className="font-inter font-bold text-2xl uppercase mb-6 text-on-surface">{t('services.s2.title')}</h3>
             <p className="text-secondary font-space text-sm leading-relaxed mb-8 flex-grow">
-              Une app interne, un back-office, un outil sur mesure. Développé en quelques semaines, pas en plusieurs mois. Sans compromis sur la qualité.
+              {t('services.s2.desc')}
             </p>
             <Link to="/projets" className="inline-flex items-center gap-2 font-space text-xs uppercase tracking-widest text-on-surface group-hover:text-primary transition-colors mb-6 mt-auto w-fit">
-              Voir un exemple <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+              {t('services.s2.cta')} <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
             </Link>
             <div className="h-[2px] w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
           </div>
 
           <div className="border-t-[1px] border-outline-variant/30 pt-8 flex flex-col group hover:border-primary transition-colors duration-500">
             <span className="font-space text-xs font-bold text-primary mb-4 block">03</span>
-            <h3 className="font-inter font-bold text-2xl uppercase mb-6 text-on-surface">Reporting & Données</h3>
+            <h3 className="font-inter font-bold text-2xl uppercase mb-6 text-on-surface">{t('services.s3.title')}</h3>
             <p className="text-secondary font-space text-sm leading-relaxed mb-8 flex-grow">
-              Tu prends des décisions sur des données éparpillées dans dix outils différents. Je centralise tout dans un dashboard clair, en temps réel.
+              {t('services.s3.desc')}
             </p>
             <Link to="/projets" className="inline-flex items-center gap-2 font-space text-xs uppercase tracking-widest text-on-surface group-hover:text-primary transition-colors mb-6 mt-auto w-fit">
-              En savoir plus <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+              {t('services.s3.cta')} <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
             </Link>
             <div className="h-[2px] w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
           </div>
@@ -226,9 +231,9 @@ export default function Accueil() {
       <section className="bg-surface-container-low px-6 md:px-12 lg:px-24 py-20 border-y-[1px] border-outline-variant/30">
         <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row gap-12 lg:gap-20">
           <div className="w-full md:w-1/3">
-            <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface">Stack</h2>
+            <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface">{t('stack.title')}</h2>
             <p className="mt-8 font-space text-secondary text-sm uppercase tracking-[0.15em] leading-relaxed">
-              Des outils choisis pour aller vite, connecter tout, et ne rien casser.
+              {t('stack.intro')}
             </p>
           </div>
           <div className="w-full md:w-2/3 space-y-[1px] bg-outline-variant/30">
@@ -236,8 +241,8 @@ export default function Accueil() {
               <div className="flex items-center gap-8">
                 <span className="font-space text-[10px] text-outline group-hover:text-primary transition-colors">01</span>
                 <div className="flex flex-col">
-                  <span className="font-inter font-bold text-lg uppercase tracking-wider text-on-surface">Automations</span>
-                  <span className="font-space text-xs text-secondary mt-1">Pour que tes processus tournent sans intervention humaine.</span>
+                  <span className="font-inter font-bold text-lg uppercase tracking-wider text-on-surface">{t('stack.i1.title')}</span>
+                  <span className="font-space text-xs text-secondary mt-1">{t('stack.i1.desc')}</span>
                 </div>
               </div>
             </div>
@@ -246,8 +251,8 @@ export default function Accueil() {
               <div className="flex items-center gap-8">
                 <span className="font-space text-[10px] text-outline group-hover:text-primary transition-colors">02</span>
                 <div className="flex flex-col">
-                  <span className="font-inter font-bold text-lg uppercase tracking-wider text-on-surface">Bases de Données</span>
-                  <span className="font-space text-xs text-secondary mt-1">La colonne vertébrale de chaque produit que je construis.</span>
+                  <span className="font-inter font-bold text-lg uppercase tracking-wider text-on-surface">{t('stack.i2.title')}</span>
+                  <span className="font-space text-xs text-secondary mt-1">{t('stack.i2.desc')}</span>
                 </div>
               </div>
             </div>
@@ -256,8 +261,8 @@ export default function Accueil() {
               <div className="flex items-center gap-8">
                 <span className="font-space text-[10px] text-outline group-hover:text-primary transition-colors">03</span>
                 <div className="flex flex-col">
-                  <span className="font-inter font-bold text-lg uppercase tracking-wider text-on-surface">Intelligence Artificielle</span>
-                  <span className="font-space text-xs text-secondary mt-1">Des LLMs intégrés directement dans tes outils métier.</span>
+                  <span className="font-inter font-bold text-lg uppercase tracking-wider text-on-surface">{t('stack.i3.title')}</span>
+                  <span className="font-space text-xs text-secondary mt-1">{t('stack.i3.desc')}</span>
                 </div>
               </div>
             </div>
@@ -266,8 +271,8 @@ export default function Accueil() {
               <div className="flex items-center gap-8">
                 <span className="font-space text-[10px] text-outline group-hover:text-primary transition-colors">04</span>
                 <div className="flex flex-col">
-                  <span className="font-inter font-bold text-lg uppercase tracking-wider text-on-surface">No-Code Front</span>
-                  <span className="font-space text-xs text-secondary mt-1">Des interfaces pro livrées en semaines, pas en mois.</span>
+                  <span className="font-inter font-bold text-lg uppercase tracking-wider text-on-surface">{t('stack.i4.title')}</span>
+                  <span className="font-space text-xs text-secondary mt-1">{t('stack.i4.desc')}</span>
                 </div>
               </div>
             </div>
@@ -276,9 +281,9 @@ export default function Accueil() {
       </section>
 
       <CTABanner 
-        title="TU VEUX<br />ALLER PLUS VITE ?"
-        subtitle="Dis-moi ce qui te prend trop de temps. On règle ça ensemble."
-        buttonText="Lancer le projet"
+        title={t('cta.title')}
+        subtitle={t('cta.subtitle')}
+        buttonText={t('cta.button')}
       />
     </>
   );

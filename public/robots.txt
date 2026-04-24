@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://florianhonore.fr/sitemap.xml
+Sitemap: https://florian-honore.com/sitemap.xml

@@ -18,6 +18,30 @@ const SEO = ({ title, description }) => {
     updateMetaTag('og:title', `${title} | Florian Honoré`, true);
     updateMetaTag('og:type', 'website', true);
     updateMetaTag('og:url', window.location.href, true);
+
+    // JSON-LD Structured Data
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Florian Honoré - Product Builder",
+      "url": "https://florian-honore.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://florian-honore.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(structuredData);
+    script.id = 'json-ld';
+    
+    // Remove old script if exists
+    const oldScript = document.getElementById('json-ld');
+    if (oldScript) oldScript.remove();
+    
+    document.head.appendChild(script);
     
   }, [title, description]);
 

@@ -12,23 +12,27 @@ import MentionsLegales from './pages/MentionsLegales';
 
 import ScrollToTop from './components/ScrollToTop';
 
+import { LanguageProvider } from './context/LanguageContext';
+
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Accueil />} />
-          <Route path="services" element={<Services />} />
-          <Route path="projets" element={<Projets />} />
-          <Route path="stack" element={<Stack />} />
-          <Route path="methode" element={<Methode />} />
-          <Route path="a-propos" element={<APropos />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="mentions-legales" element={<MentionsLegales />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Accueil />} />
+            <Route path="services" element={<Services />} />
+            <Route path="projets" element={<Projets />} />
+            <Route path="stack" element={<Stack />} />
+            <Route path="methode" element={<Methode />} />
+            <Route path="a-propos" element={<APropos />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="mentions-legales" element={<MentionsLegales />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 }
 

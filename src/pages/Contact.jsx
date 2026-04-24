@@ -41,9 +41,10 @@ export default function Contact() {
                 <div className="absolute inset-0 bg-[#d94a12] -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
               </a>
 
-              <p className="mt-8 font-space text-secondary text-sm">
+              <p className="mt-8 font-space text-secondary text-sm break-all">
                 Tu préfères écrire ? <a href="mailto:honoreflorian.dwwm@gmail.com" className="text-on-surface font-bold border-b border-primary hover:text-primary transition-colors">honoreflorian.dwwm@gmail.com</a>
               </p>
+
             </div>
           </div>
 
@@ -55,7 +56,7 @@ export default function Contact() {
               <div>
                 <span className="font-space text-[10px] uppercase tracking-widest text-secondary block mb-4">EMAIL</span>
                 <a 
-                  className="font-inter text-xl md:text-2xl font-black tracking-tight hover:text-primary transition-colors block uppercase" 
+                  className="font-inter text-xl md:text-2xl font-black tracking-tight hover:text-primary transition-colors block uppercase break-all" 
                   href="mailto:honoreflorian.dwwm@gmail.com"
                 >
                   honoreflorian.dwwm@gmail.com
@@ -92,3 +93,4 @@ export default function Contact() {
     </div>
   );
 }
+
