@@ -35,7 +35,7 @@ const projets = [
     num: '03',
     category: 'INTERNAL TOOL',
     client: 'POLITES',
-    desc: "Pas d'interface interne, tout se gérait dans des tableurs. J'ai conçu et développé un back-office complet sur Retool, opérationnel en quelques jours.",
+    desc: "Pas d'interface interne, tout se gérait dans des tableurs. J'ai conçu et développé un back-office complet sur Retool, opérationnel en quelques semaines.",
     outils: ['Retool', 'Airtable', 'Freshdesk'],
     img: imgPolites,
     alt: "Polites",
