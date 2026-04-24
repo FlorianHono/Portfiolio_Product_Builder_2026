@@ -1,8 +1,14 @@
+import SEO from '../components/SEO';
+
 export default function Contact() {
   return (
     <div className="w-full">
+      <SEO 
+        title="Contact" 
+        description="Contactez Florian Honoré pour vos projets d'automatisation IA et de product building. Réservez un call ou envoyez un email."
+      />
       {/* Header Info */}
-      <section className="px-6 md:px-12 pt-12 pb-20 max-w-[1600px] mx-auto">
+      <section className="px-6 md:px-12 lg:px-24 pt-12 pb-20 max-w-[1600px] mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-baseline gap-4 mb-12 border-b border-outline-variant/30 pb-6">
           <span className="font-space text-[10px] tracking-[0.4em] uppercase text-primary font-bold">STATUS : DISPONIBLE</span>
           <span className="font-space text-[10px] tracking-[0.4em] uppercase text-secondary font-bold">LOC: PARIS / REMOTE</span>
@@ -10,7 +16,7 @@ export default function Contact() {
         
         <h1 
           className="font-inter font-black tracking-[-0.04em] text-on-surface leading-[0.85] uppercase mb-16 reveal delay-1"
-          style={{ fontSize: 'clamp(3rem, 10vw, 8.5rem)' }}
+          style={{ fontSize: 'clamp(2.5rem, 12vw, 8.5rem)' }}
         >
           TRAVAILLONS<br/>
           <span className="text-primary">ENSEMBLE.</span>
@@ -29,7 +35,7 @@ export default function Contact() {
                 href="https://cal.com/florian-honore-rzzjky/30min" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center bg-primary-container text-white px-10 py-5 font-space font-bold uppercase tracking-widest text-sm overflow-hidden"
+                className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 md:px-10 py-4 md:py-5 font-space font-bold uppercase tracking-widest text-xs md:text-sm overflow-hidden"
               >
                 <span className="relative z-10">RÉSERVER UN CALL →</span>
                 <div className="absolute inset-0 bg-[#d94a12] -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>

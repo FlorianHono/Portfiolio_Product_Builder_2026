@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 export default function MentionsLegales() {
   const sections = [
     {
@@ -64,11 +66,16 @@ export default function MentionsLegales() {
   ];
 
   return (
-    <section className="min-h-screen px-6 md:px-12 py-20 max-w-3xl mx-auto">
-      <span className="font-space text-xs tracking-[0.4em] uppercase text-primary mb-6 block font-bold">
+    <div className="w-full">
+      <SEO 
+        title="Mentions Légales" 
+        description="Informations légales concernant le site de Florian Honoré."
+      />
+    <section className="min-h-screen px-6 md:px-12 lg:px-24 py-20 max-w-5xl mx-auto">
+      <span className="font-space text-sm tracking-[0.4em] uppercase text-primary mb-6 block font-bold">
         Informations légales
       </span>
-      <h1 className="font-inter font-black text-4xl md:text-5xl uppercase tracking-tighter text-on-surface mb-16">
+      <h1 className="font-inter font-black text-display-3 md:text-display-2 uppercase tracking-tighter text-on-surface mb-16">
         Mentions Légales
       </h1>
 
@@ -89,5 +96,6 @@ export default function MentionsLegales() {
         <div className="border-t border-outline-variant/30 pt-10" />
       </div>
     </section>
+    </div>
   );
 }

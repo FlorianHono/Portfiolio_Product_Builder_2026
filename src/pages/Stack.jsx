@@ -1,10 +1,17 @@
+import SEO from '../components/SEO';
+import SectionHeader from '../components/SectionHeader';
+
 export default function Stack() {
   return (
-    <div className="flex-1 px-8 md:px-16 py-16 bg-surface">
+    <div className="flex-1 px-6 md:px-12 lg:px-24 py-16 bg-surface">
+      <SEO 
+        title="Stack" 
+        description="L'arsenal technique de Florian Honoré : outils IA, automatisation, bases de données et frontend no-code."
+      />
       <div className="max-w-6xl mx-auto mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-outline-variant pb-12">
         <div className="max-w-2xl reveal delay-1">
           <span className="font-label text-[10px] uppercase tracking-[0.3em] text-primary mb-4 block">Systèmes &amp; Technologies</span>
-          <h1 className="text-5xl md:text-7xl font-headline font-black uppercase tracking-tighter leading-none text-on-surface">L'ARSENAL <br/>TECHNIQUE.</h1>
+          <h1 className="text-display-2 md:text-display-1 font-headline font-black uppercase tracking-tighter leading-none text-on-surface">L'ARSENAL <br/>TECHNIQUE.</h1>
         </div>
         <div className="md:text-right reveal delay-2">
           <p className="font-label text-sm uppercase tracking-widest text-secondary max-w-xs mb-4">
@@ -38,7 +45,7 @@ export default function Stack() {
         </div>
 
         <div className="md:col-span-4 bg-surface-container p-8 flex items-center justify-center relative overflow-hidden group">
-          <img className="object-cover w-full h-full opacity-30 grayscale contrast-125 absolute inset-0" alt="Abstract neural networks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiCrpJ0Z_IuGFopYUZBaaIp7CPVDL0S2QzEf11jYSBroBkNsv2xy8ZXplJR9BQ6YDGtMF1LGq5pQ1MSs0xyQ1DVU7GwkTJVvxCwzNkZ9ZxN0_F3SP-O7FHUsuA_0trwLGzXjz2Q0K2RHp9qlaskWPIN-4Ci3Y0sxY0J7LmnlXYx8Sy3MOsKUjf3sc8Q_7wcoX96KH6xowrE_uIwKDvuNrzJ5b7Muu69vEbCepCA5JjbF3Yb_33BkL6WxV9gWY2YI2xB7RU4rkVD5w"/>
+          <img className="object-cover w-full h-full opacity-30 grayscale contrast-125 absolute inset-0" alt="Abstract neural networks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiCrpJ0Z_IuGFopYUZBaaIp7CPVDL0S2QzEf11jYSBroBkNsv2xy8ZXplJR9BQ6YDGtMF1LGq5pQ1MSs0xyQ1DVU7GwkTJVvxCwzNkZ9ZxN0_F3SP-O7FHUsuA_0trwLGzXjz2Q0K2RHp9qlaskWPIN-4Ci3Y0sxY0J7LmnlXYx8Sy3MOsKUjf3sc8Q_7wcoX96KH6xowrE_uIwKDvuNrzJ5b7Muu69vEbCepCA5JjbF3Yb_33BkL6WxV9gWY2YI2xB7RU4rkVD5w" loading="lazy"/>
           <div className="relative z-10 text-center">
             <span className="material-symbols-outlined text-4xl text-primary">psychology</span>
           </div>
@@ -106,7 +113,7 @@ export default function Stack() {
           </div>
         </div>
 
-        <div className="md:col-span-3 bg-[#1a1c1b] text-[#faf9f7] p-8 border-t border-l border-outline-variant flex flex-col justify-between min-h-[320px]">
+        <div className="md:col-span-3 bg-[#1a1c1b] text-[#faf9f7] p-8 border-t md:border-l border-outline-variant flex flex-col justify-between min-h-[320px]">
           <div className="flex justify-between items-start">
             <div className="font-label text-3xl font-light text-neutral-600">07</div>
             <span className="bg-primary-container text-white px-2 py-1 font-label text-[8px] font-bold tracking-widest uppercase">Labs</span>

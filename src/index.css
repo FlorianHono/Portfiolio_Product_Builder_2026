@@ -32,9 +32,22 @@
 
 @layer utilities {
   .text-huge {
-    font-size: clamp(3rem, 9vw, 8rem);
+    font-size: clamp(2.5rem, 12vw, 8.5rem);
     line-height: 0.85;
   }
+  .text-display-1 {
+    font-size: clamp(2.25rem, 10vw, 7rem);
+    line-height: 0.9;
+  }
+  .text-display-2 {
+    font-size: clamp(2rem, 8vw, 5rem);
+    line-height: 1;
+  }
+  .text-display-3 {
+    font-size: clamp(1.75rem, 6vw, 3.5rem);
+    line-height: 1.1;
+  }
+  
   .parallax-bg {
     transform: translateZ(0);
     transition: transform 0.2s ease-out;
@@ -45,6 +58,11 @@
   .marquee-mask {
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  .section-container {
+    @apply px-6 md:px-12 lg:px-24 max-w-[1600px] mx-auto w-full;
   }
 }
 

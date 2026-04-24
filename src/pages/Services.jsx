@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import SectionHeader from '../components/SectionHeader';
+import CTABanner from '../components/CTABanner';
 
 const services = [
   {
@@ -30,20 +33,15 @@ const services = [
 export default function Services() {
   return (
     <>
-      {/* Hero */}
-      <section className="px-6 md:px-12 pt-12 pb-20 max-w-[1600px] mx-auto">
-        <span className="font-space text-sm tracking-[0.4em] uppercase text-primary mb-5 block font-bold reveal delay-1">
-          Florian Honoré Portfolio
-        </span>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-20">
-          <h1 className="font-inter font-black tracking-[-0.04em] text-on-surface leading-none reveal delay-2"
-              style={{ fontSize: 'clamp(3rem, 9vw, 8rem)', lineHeight: '0.85' }}>
-            SERVICES
-          </h1>
-          <p className="font-space text-secondary text-base md:text-lg max-w-sm leading-relaxed border-l-2 border-primary pl-6 reveal delay-3">
-            Ce que je construis pour toi, de A à Z.
-          </p>
-        </div>
+      <SEO 
+        title="Services" 
+        description="Services de product building : automatisations IA, développement low-code et reporting de données."
+      />
+      <SectionHeader 
+        label="Florian Honoré Portfolio"
+        title="SERVICES"
+        description="Ce que je construis pour toi, de A à Z."
+      />
 
         {/* Services */}
         <div className="space-y-0">
@@ -105,21 +103,11 @@ export default function Services() {
           ))}
           <div className="border-t border-outline-variant/30" />
         </div>
-      </section>
 
-      {/* Bandeau bas */}
-      <section className="bg-on-surface py-20 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 max-w-full">
-        <p className="font-inter font-black text-2xl md:text-4xl uppercase tracking-tighter leading-tight" style={{ color: 'var(--color-surface)' }}>
-          Un projet qui ne rentre pas<br />dans ces cases ? Parlons-en quand même.
-        </p>
-        <Link
-          to="/contact"
-          className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 py-4 font-space font-bold uppercase tracking-widest text-xs overflow-hidden flex-shrink-0"
-        >
-          <span className="relative z-10">On en parle ?</span>
-          <div className="absolute inset-0 bg-[#d94a12] -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-        </Link>
-      </section>
+      <CTABanner 
+        title="Un projet qui ne rentre pas<br />dans ces cases ? Parlons-en."
+        buttonText="On en parle ?"
+      />
     </>
   );
 }

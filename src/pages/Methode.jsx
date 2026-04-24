@@ -1,27 +1,22 @@
+import SEO from '../components/SEO';
+import SectionHeader from '../components/SectionHeader';
+import CTABanner from '../components/CTABanner';
+
 export default function Methode() {
   return (
     <div className="w-full">
-      {/* Hero Section */}
-      <section className="px-6 md:px-12 pt-12 pb-20 max-w-[1600px] mx-auto">
-        <span className="font-space text-sm tracking-[0.4em] uppercase text-primary mb-5 block font-bold reveal delay-1">
-          Florian Honoré Portfolio
-        </span>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6">
-          <h1
-            className="font-inter font-black tracking-[-0.04em] text-on-surface leading-none reveal delay-2"
-            style={{ fontSize: 'clamp(3rem, 9vw, 8rem)', lineHeight: '0.85' }}
-          >
-            MÉTHODE
-          </h1>
-          <p className="font-space text-secondary text-base md:text-lg max-w-sm leading-relaxed border-l-2 border-primary pl-6 reveal delay-3">
-            Je ne livre pas des outils, je règle des problèmes. La tech est un moyen, pas une fin.
-          </p>
-        </div>
-        <div className="h-px w-full bg-outline-variant/30" />
-      </section>
+      <SEO 
+        title="Méthode" 
+        description="L'approche de Florian Honoré : prototypage rapide, IA native et focus sur les résultats business."
+      />
+      <SectionHeader 
+        label="Florian Honoré Portfolio"
+        title="MÉTHODE"
+        description="Je ne livre pas des outils, je règle des problèmes. La tech est un moyen, pas une fin."
+      />
 
       {/* Approche Section */}
-      <section className="px-6 md:px-12 pb-32 max-w-[1600px] mx-auto">
+      <section className="px-6 md:px-12 lg:px-24 pb-32 max-w-[1600px] mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <span className="font-space text-4xl font-black text-outline-variant">01</span>
           <h2 className="font-inter font-black text-3xl uppercase tracking-tighter">Approche</h2>
@@ -62,18 +57,11 @@ export default function Methode() {
         </div>
       </section>
 
-      {/* Bottom CTA (Simple & clean) */}
-      <section className="bg-on-surface py-20 px-6 md:px-12 flex flex-col items-center text-center">
-        <h2 className="font-inter font-black text-3xl md:text-5xl uppercase tracking-tighter leading-tight mb-10" style={{ color: 'var(--color-surface)' }}>
-          On définit ton projet ensemble ?
-        </h2>
-        <a 
-          href="mailto:honoreflorian.dwwm@gmail.com"
-          className="bg-primary-container text-white px-10 py-5 font-space font-bold uppercase tracking-widest text-sm hover:scale-105 transition-transform"
-        >
-          Me contacter
-        </a>
-      </section>
+      <CTABanner 
+        title="On définit ton projet ensemble ?"
+        buttonText="Me contacter"
+        href="mailto:honoreflorian.dwwm@gmail.com"
+      />
     </div>
   );
 }

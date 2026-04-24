@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import CTABanner from '../components/CTABanner';
 import profilePic from '../assets/florian.png';
 
 const LogoYottascale = () => (
@@ -86,12 +88,17 @@ export default function Accueil() {
 
   return (
     <>
-      <section className="relative min-h-[calc(100vh-80px)] flex flex-col pt-12 md:pt-16 px-6 md:px-12 pb-20 overflow-hidden">
+      <SEO 
+        title="Product Builder IA & No-Code" 
+        description="Florian Honoré, Product Builder spécialisé en IA et No-Code. Je construis vos automatisations et interfaces en quelques semaines."
+      />
+      <section className="relative min-h-[calc(100vh-80px)] flex flex-col pt-12 md:pt-16 px-6 md:px-12 lg:px-24 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none overflow-hidden mix-blend-multiply">
           <img
             alt="Workflow automation diagram"
             className="parallax-bg w-[120%] h-[120%] -translate-x-[10%] -translate-y-[10%] object-cover scale-110"
             src="https://lh3.googleusercontent.com/aida/ADBb0ugY6OtPSFzDElhf0BvBRDp7EvIgUp7kE8JP24TPjZf9GXKTgGyLHjRtYPfifez5JVg_4yv0DX-tfXrHLstoPRHGa7Hl8X9zQMnbhmEpu0lpNv1T3IqU216jFyd4b15RqIKfQOhYjC41ruGPFBCeFZAmKpiMHG4ljV6rwDdxgOHRJQaF8rfLci8fCcX9Jt7rt-mVkAz4iu5m1pvcDIRe7_L2Kpgue0MWSMrqKqz2Wp7a7GOKc84OmsgPCA"
+            loading="lazy"
           />
         </div>
 
@@ -104,14 +111,14 @@ export default function Accueil() {
               <h1 className="font-inter font-black text-huge tracking-[-0.04em] text-on-surface mb-7 drop-shadow-sm reveal delay-2">
                 PRODUCT<br />
                 <span className="inline-block relative">
-                  BUILDER
-                  <div className="absolute -right-4 md:-right-12 top-1/2 w-8 md:w-24 h-[2px] md:h-[4px] bg-primary"></div>
+                   BUILDER
+                  <div className="absolute -right-4 md:-right-12 top-1/2 w-8 md:w-24 h-[1.5px] md:h-[4px] bg-primary"></div>
                 </span>
               </h1>
               <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 mb-10">
-                <span className="font-space text-xl md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">Plus vite</span>
+                <span className="font-space text-lg md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">Plus vite</span>
                 <span className="hidden md:block w-2 h-2 bg-primary"></span>
-                <span className="font-space text-xl md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">Sans équipe tech lourde</span>
+                <span className="font-space text-lg md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">Sans équipe tech lourde</span>
               </div>
 
               <div className="max-w-xl">
@@ -145,6 +152,7 @@ export default function Accueil() {
                     src={profilePic}
                     alt="Florian Honoré"
                     className="w-[450px] h-[550px] object-cover object-[center_15%] filter grayscale contrast-[1.1] brightness-[1.05] mix-blend-multiply"
+                    loading="lazy"
                   />
                   {/* Architectural accents */}
                   <div className="absolute -top-1 -right-1 w-8 h-8 border-t-2 border-r-2 border-primary"></div>
@@ -168,9 +176,9 @@ export default function Accueil() {
         </div>
       </section>
 
-      <section className="px-6 md:px-12 py-20 border-t-[1px] border-outline-variant/30 bg-surface relative z-20">
+      <section className="px-6 md:px-12 lg:px-24 py-20 border-t-[1px] border-outline-variant/30 bg-surface relative z-20">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 max-w-[1600px] mx-auto">
-          <h2 className="font-inter font-black text-6xl uppercase tracking-tighter text-on-surface reveal">Services</h2>
+          <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface reveal">Services</h2>
           <div className="max-w-md mt-6 md:mt-0 font-space text-secondary text-sm leading-relaxed uppercase tracking-widest border-l-[2px] border-primary pl-6 reveal delay-1">
             Tu veux aller vite, sans recruter une équipe tech. Je construis ce dont tu as besoin et tu gardes la main.
           </div>
@@ -215,10 +223,10 @@ export default function Accueil() {
         </div>
       </section>
 
-      <section className="bg-surface-container-low px-6 md:px-12 py-20 border-y-[1px] border-outline-variant/30">
-        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row gap-20">
+      <section className="bg-surface-container-low px-6 md:px-12 lg:px-24 py-20 border-y-[1px] border-outline-variant/30">
+        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row gap-12 lg:gap-20">
           <div className="w-full md:w-1/3">
-            <h2 className="font-inter font-black text-5xl uppercase tracking-tighter text-on-surface">Stack</h2>
+            <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface">Stack</h2>
             <p className="mt-8 font-space text-secondary text-sm uppercase tracking-[0.15em] leading-relaxed">
               Des outils choisis pour aller vite, connecter tout, et ne rien casser.
             </p>
@@ -267,16 +275,11 @@ export default function Accueil() {
         </div>
       </section>
 
-      <section className="bg-on-surface text-surface py-20 px-6 md:px-12 flex flex-col items-center text-center">
-        <h2 className="font-inter font-black text-4xl md:text-6xl uppercase tracking-tighter mb-6 leading-none" style={{ color: 'var(--color-surface)' }}>TU VEUX<br />ALLER PLUS VITE ?</h2>
-        <p className="font-space text-secondary-fixed text-sm max-w-xl mb-8 uppercase tracking-[0.2em] opacity-70">
-          Dis-moi ce qui te prend trop de temps. On règle ça ensemble.
-        </p>
-        <Link to="/contact" className="relative group bg-primary-container text-white px-8 py-3 font-space font-bold uppercase tracking-[0.3em] text-xs overflow-hidden">
-          <span className="relative z-10 transition-colors">Lancer le projet</span>
-          <div className="absolute inset-0 bg-[#d94a12] -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-        </Link>
-      </section>
+      <CTABanner 
+        title="TU VEUX<br />ALLER PLUS VITE ?"
+        subtitle="Dis-moi ce qui te prend trop de temps. On règle ça ensemble."
+        buttonText="Lancer le projet"
+      />
     </>
   );
 }
