@@ -44,7 +44,7 @@ export default function Services() {
       />
 
         {/* Services */}
-        <div className="space-y-0">
+        <div className="space-y-0 px-6 md:px-12 lg:px-24 max-w-[1600px] mx-auto">
           {services.map((s, i) => (
             <div key={s.num} 
                  className={`group border-t border-outline-variant/30 py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 hover:border-primary transition-colors duration-500 reveal`}
