@@ -17,7 +17,7 @@ export const translations = {
       start: "Démarrer un projet",
       faster: "Plus vite",
       noTech: "Sans équipe tech lourde",
-      description: "Je construis les systèmes que ton équipe n'a pas le temps de créer, automatisations, agents IA, ainsi que des interfaces. Opérationnel en semaines.",
+      description: "Je construis les systèmes que ton équipe n'a pas le temps de créer, automatisations, agents IA, ainsi que des interfaces. Opérationnel en quelques semaines.",
       clientText: "Ils ont gagné du temps :"
     },
     services: {
@@ -75,7 +75,7 @@ export const translations = {
       start: "Start a project",
       faster: "Faster",
       noTech: "Without a heavy tech team",
-      description: "I build the systems your team doesn't have time to create, automations, AI agents, and interfaces. Operational in weeks.",
+      description: "I build the systems your team doesn't have time to create, automations, AI agents, and interfaces. Operational in a few weeks.",
       clientText: "They saved time:"
     },
     services: {
