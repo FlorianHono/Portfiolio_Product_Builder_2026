@@ -128,7 +128,7 @@ export default function Accueil() {
 
               <div className="max-w-xl">
                 <p className="font-space text-lg md:text-xl text-secondary leading-relaxed mb-8 font-light">
-                  {t('hero.description').split('Opérationnel')[0]} <span className="text-primary font-medium italic">{language === 'fr' ? 'Opérationnel en semaines.' : 'Operational in weeks.'}</span>
+                  {t('hero.description').split('Opérationnel')[0]} <span className="text-primary font-medium italic">{language === 'fr' ? 'Opérationnel en quelques jours.' : 'Operational in a few days.'}</span>
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 reveal delay-4">
                   <Link to="/projets" className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 py-3 font-space font-bold uppercase tracking-widest text-xs overflow-hidden">
