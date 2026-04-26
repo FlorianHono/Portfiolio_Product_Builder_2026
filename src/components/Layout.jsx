@@ -78,7 +78,7 @@ function Layout() {
             className="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant/30 text-on-surface hover:bg-on-surface/5 transition-all duration-300 font-space text-[10px] font-bold uppercase tracking-widest"
             aria-label="Changer de langue"
           >
-            {language === 'fr' ? 'EN' : 'FR'}
+            {language.toUpperCase()}
           </button>
 
           <button 

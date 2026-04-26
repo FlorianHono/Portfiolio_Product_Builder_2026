@@ -1,66 +1,72 @@
 import SEO from '../components/SEO';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../translations';
+import React from 'react';
 
 export default function MentionsLegales() {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+
   const sections = [
     {
       num: '01',
-      title: 'Éditeur du site',
+      title: t('mentions.sections.s1.title'),
       content: (
         <div className="space-y-1">
-          <p>Florian Honoré</p>
-          <p>Activité : Product Builder, Développeur Low-Code & Expert en Automatisation IA</p>
-          <p>Statut : Auto-entrepreneur / Freelance</p>
-          <p>Localisation : Champigny-sur-Marne, Île-de-France, France</p>
-          <p>Téléphone : <a href="tel:+33768717015" className="text-primary hover:underline">+33 7 68 71 70 15</a></p>
-          <p>Email : <a href="mailto:honoreflorian.dwwm@gmail.com" className="text-primary hover:underline">honoreflorian.dwwm@gmail.com</a></p>
-          <p>Site web : <a href="https://florianhonore.fr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">florianhonore.fr</a></p>
+          <p>{t('mentions.sections.s1.lines.0')}</p>
+          <p>{t('mentions.sections.s1.lines.1')}</p>
+          <p>{t('mentions.sections.s1.lines.2')}</p>
+          <p>{t('mentions.sections.s1.lines.3')}</p>
+          <p>{t('mentions.sections.s1.lines.4')}<a href="tel:+33768717015" className="text-primary hover:underline">+33 7 68 71 70 15</a></p>
+          <p>{t('mentions.sections.s1.lines.5')}<a href="mailto:honoreflorian.dwwm@gmail.com" className="text-primary hover:underline">honoreflorian.dwwm@gmail.com</a></p>
+          <p>{t('mentions.sections.s1.lines.6')}<a href="https://florianhonore.fr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">florianhonore.fr</a></p>
         </div>
       ),
     },
     {
       num: '02',
-      title: 'Hébergement',
+      title: t('mentions.sections.s2.title'),
       content: (
         <div className="space-y-1">
-          <p>Hostinger International Ltd.</p>
-          <p>61 Lordou Vironos Street, 6023 Larnaca, Chypre</p>
-          <p>Site : <a href="https://www.hostinger.fr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.hostinger.fr</a></p>
+          <p>{t('mentions.sections.s2.lines.0')}</p>
+          <p>{t('mentions.sections.s2.lines.1')}</p>
+          <p>{t('mentions.sections.s2.lines.2')}<a href="https://www.hostinger.fr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.hostinger.fr</a></p>
         </div>
       ),
     },
     {
       num: '03',
-      title: 'Propriété intellectuelle',
+      title: t('mentions.sections.s3.title'),
       content: (
-        <p>L'ensemble du contenu de ce site (textes, visuels, structure, code) est la propriété exclusive de Florian Honoré, sauf mention contraire. Toute reproduction, distribution ou utilisation sans autorisation préalable est strictement interdite.</p>
+        <p>{t('mentions.sections.s3.content')}</p>
       ),
     },
     {
       num: '04',
-      title: 'Données personnelles',
+      title: t('mentions.sections.s4.title'),
       content: (
-        <p>Ce site ne collecte aucune donnée personnelle sans votre consentement explicite. Les informations transmises via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes et ne sont jamais cédées à des tiers. Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ce droit : <a href="mailto:honoreflorian.dwwm@gmail.com" className="text-primary hover:underline">honoreflorian.dwwm@gmail.com</a></p>
+        <p>{t('mentions.sections.s4.content')}<a href="mailto:honoreflorian.dwwm@gmail.com" className="text-primary hover:underline">honoreflorian.dwwm@gmail.com</a></p>
       ),
     },
     {
       num: '05',
-      title: 'Cookies',
+      title: t('mentions.sections.s5.title'),
       content: (
-        <p>Ce site peut utiliser des cookies techniques nécessaires à son bon fonctionnement. Aucun cookie publicitaire ou de tracking tiers n'est utilisé sans votre accord.</p>
+        <p>{t('mentions.sections.s5.content')}</p>
       ),
     },
     {
       num: '06',
-      title: 'Responsabilité',
+      title: t('mentions.sections.s6.title'),
       content: (
-        <p>Florian Honoré s'efforce de maintenir les informations de ce site à jour et exactes, mais ne peut garantir leur exhaustivité ni leur exactitude à tout moment. Les liens vers des sites tiers sont fournis à titre indicatif. Florian Honoré n'est pas responsable de leur contenu.</p>
+        <p>{t('mentions.sections.s6.content')}</p>
       ),
     },
     {
       num: '07',
-      title: 'Droit applicable',
+      title: t('mentions.sections.s7.title'),
       content: (
-        <p>Les présentes mentions légales sont régies par le droit français. Tout litige relève de la compétence des tribunaux français.</p>
+        <p>{t('mentions.sections.s7.content')}</p>
       ),
     },
   ];
@@ -68,15 +74,15 @@ export default function MentionsLegales() {
   return (
     <div className="w-full">
       <SEO 
-        title="Mentions Légales" 
-        description="Informations légales concernant le site de Florian Honoré."
+        title={t('mentions.seoTitle')} 
+        description={t('mentions.seoDesc')}
       />
     <section className="min-h-screen px-6 md:px-12 lg:px-24 py-20 max-w-5xl mx-auto">
       <span className="font-space text-sm tracking-[0.4em] uppercase text-primary mb-6 block font-bold">
-        Informations légales
+        {t('mentions.headerLabel')}
       </span>
       <h1 className="font-inter font-black text-display-3 md:text-display-2 uppercase tracking-tighter text-on-surface mb-16">
-        Mentions Légales
+        {t('mentions.headerTitle')}
       </h1>
 
       <div className="space-y-0">

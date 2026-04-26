@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import SectionHeader from '../components/SectionHeader';
 import CTABanner from '../components/CTABanner';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../translations';
 
 // Project images are located in src/assets/
 import imgWorkflow from '../assets/workflow_automatisé.png';
@@ -10,70 +12,73 @@ import imgPolites from '../assets/polites.png';
 import imgPada1 from '../assets/Pada1_work.png';
 import imgEnclin from '../assets/Enclin.png';
 
-const projets = [
-  {
-    num: '01',
-    category: 'AUTOMATISATION',
-    client: 'YOTTASCALE',
-    desc: "L'équipe perdait des heures chaque semaine sur la prospection manuelle. J'ai automatisé l'intégralité du pipeline avec N8N et Claude API, de la collecte Apollo.io à l'envoi personnalisé via Brevo.",
-    outils: ['N8N', 'Claude API', 'Brevo', 'Apollo.io'],
-    img: imgWorkflow,
-    alt: "workflow_automatisé",
-    reverse: false,
-  },
-  {
-    num: '02',
-    category: 'DATA REPORTING',
-    client: 'YOTTASCALE',
-    desc: "Les données business étaient éparpillées entre Gmail, GA4 et des exports manuels. J'ai centralisé tout ça dans un dashboard temps réel connecté via N8N et Claude API.",
-    outils: ['N8N', 'Claude API', 'GA4', 'Gmail'],
-    img: imgRapport,
-    alt: "rapport_hebdo",
-    reverse: true,
-  },
-  {
-    num: '03',
-    category: 'INTERNAL TOOL',
-    client: 'POLITES',
-    desc: "Pas d'interface interne, tout se gérait dans des tableurs. J'ai conçu et développé un back-office complet sur Retool, opérationnel en quelques semaines.",
-    outils: ['Retool', 'Airtable', 'Freshdesk'],
-    img: imgPolites,
-    alt: "Polites",
-    reverse: false,
-  },
-  {
-    num: '04',
-    category: 'BUSINESS APP',
-    client: 'PADA1',
-    desc: "Une app métier construite de zéro, design UI/UX sur Figma, développement sur Weweb, backend sur Xano. Livré dans le cadre d'un contrat pro.",
-    outils: ['Figma', 'Weweb', 'Xano', 'Airtable'],
-    img: imgPada1,
-    alt: "Pada1_work",
-    reverse: true,
-  },
-  {
-    num: '05',
-    category: 'LOWCODE & FORMATION',
-    client: 'ENCLIN',
-    desc: "Design UI/UX et site multipage sur Framer. Formation des équipes à la conception d'applications web no-code sur Softr et Airtable.",
-    outils: ['Figma', 'Framer', 'Softr', 'Airtable'],
-    img: imgEnclin,
-    alt: "Enclin",
-    reverse: false,
-  },
-];
-
 export default function Projets() {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+
+  const projets = [
+    {
+      num: '01',
+      category: 'AUTOMATISATION',
+      client: 'YOTTASCALE',
+      desc: t('projets.items.p1.desc'),
+      outils: ['N8N', 'Claude API', 'Brevo', 'Apollo.io'],
+      img: imgWorkflow,
+      alt: "workflow_automatisé",
+      reverse: false,
+    },
+    {
+      num: '02',
+      category: 'DATA REPORTING',
+      client: 'YOTTASCALE',
+      desc: t('projets.items.p2.desc'),
+      outils: ['N8N', 'Claude API', 'GA4', 'Gmail'],
+      img: imgRapport,
+      alt: "rapport_hebdo",
+      reverse: true,
+    },
+    {
+      num: '03',
+      category: 'INTERNAL TOOL',
+      client: 'POLITES',
+      desc: t('projets.items.p3.desc'),
+      outils: ['Retool', 'Airtable', 'Freshdesk'],
+      img: imgPolites,
+      alt: "Polites",
+      reverse: false,
+    },
+    {
+      num: '04',
+      category: 'BUSINESS APP',
+      client: 'PADA1',
+      desc: t('projets.items.p4.desc'),
+      outils: ['Figma', 'Weweb', 'Xano', 'Airtable'],
+      img: imgPada1,
+      alt: "Pada1_work",
+      reverse: true,
+    },
+    {
+      num: '05',
+      category: 'LOWCODE & FORMATION',
+      client: 'ENCLIN',
+      desc: t('projets.items.p5.desc'),
+      outils: ['Figma', 'Framer', 'Softr', 'Airtable'],
+      img: imgEnclin,
+      alt: "Enclin",
+      reverse: false,
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO 
-        title="Projets" 
-        description="Découvrez les projets réalisés par Florian Honoré : automatisations IA, applications métier no-code et outils internes."
+        title={t('projets.seoTitle')} 
+        description={t('projets.seoDesc')}
       />
       <SectionHeader 
-        label="Florian Honoré Portfolio"
-        title="PROJETS"
-        description="Archives sélectionnées. 2024. 2026."
+        label={t('projets.headerLabel')}
+        title={t('projets.headerTitle')}
+        description={t('projets.headerDesc')}
       />
 
       {/* Liste projets */}
@@ -111,7 +116,7 @@ export default function Projets() {
               <div className="lg:w-3/5">
                 <div className="relative overflow-hidden aspect-[16/9] bg-surface-container">
                   <span className="absolute top-4 left-4 z-10 font-space text-[10px] bg-primary text-white px-3 py-1 tracking-widest uppercase">
-                    Résultat
+                    {t('projets.resultLabel')}
                   </span>
                   <img
                     className="w-full h-full object-contain transition-transform duration-700"
@@ -130,7 +135,7 @@ export default function Projets() {
       </section>
 
       <CTABanner 
-        title="Prêt à lancer<br />le prochain projet ?"
+        title={t('projets.ctaTitle')}
       />
     </div>
   );
