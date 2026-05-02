@@ -78,17 +78,32 @@ export default function Accueil() {
   const { t } = useTranslation(language);
 
   useEffect(() => {
-    // Subtle parallax effect for hero background
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+
+    let requestRef;
+    let mouseX = 0;
+    let mouseY = 0;
+
     const handleMouseMove = (e) => {
+      mouseX = (e.clientX - window.innerWidth / 2) * 0.02;
+      mouseY = (e.clientY - window.innerHeight / 2) * 0.02;
+    };
+
+    const updateParallax = () => {
       const img = document.querySelector('.parallax-bg');
-      if (!img) return;
-      const moveX = (e.clientX - window.innerWidth / 2) * 0.02;
-      const moveY = (e.clientY - window.innerHeight / 2) * 0.02;
-      img.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.1)`;
+      if (img) {
+        img.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) scale(1.1)`;
+      }
+      requestRef = requestAnimationFrame(updateParallax);
     };
 
     document.addEventListener('mousemove', handleMouseMove);
-    return () => document.removeEventListener('mousemove', handleMouseMove);
+    requestRef = requestAnimationFrame(updateParallax);
+    
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      cancelAnimationFrame(requestRef);
+    };
   }, []);
 
   return (

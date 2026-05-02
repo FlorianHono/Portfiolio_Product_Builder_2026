@@ -47,12 +47,11 @@
     background-color: var(--color-surface);
     color: var(--color-on-surface);
     transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: none;
   }
-  
-  a, button, [role="button"] {
-    cursor: none;
-  }
+}
+
+.has-custom-cursor, .has-custom-cursor a, .has-custom-cursor button, .has-custom-cursor [role="button"] {
+  cursor: none !important;
 }
 
 @layer utilities {

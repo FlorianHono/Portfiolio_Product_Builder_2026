@@ -5,8 +5,29 @@ const CustomCursor = () => {
   const cursorOutlineRef = useRef(null);
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkMobile = () => {
+      const mobile = window.matchMedia("(pointer: coarse)").matches || window.innerWidth < 1024;
+      setIsMobile(mobile);
+      if (mobile) {
+        document.body.classList.remove('has-custom-cursor');
+      } else {
+        document.body.classList.add('has-custom-cursor');
+      }
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    if (window.matchMedia("(pointer: coarse)").matches || window.innerWidth < 1024) {
+      return () => {
+        window.removeEventListener('resize', checkMobile);
+        document.body.classList.remove('has-custom-cursor');
+      };
+    }
+
     const cursorDot = cursorDotRef.current;
     const cursorOutline = cursorOutlineRef.current;
     
@@ -20,14 +41,12 @@ const CustomCursor = () => {
       mouseY = e.clientY;
       setIsVisible(true);
       
-      // Immediate move for dot
       if (cursorDot) {
         cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
       }
     };
 
     const animateOutline = () => {
-      // Lerp for smooth trailing effect
       outlineX += (mouseX - outlineX) * 0.15;
       outlineY += (mouseY - outlineY) * 0.15;
 
@@ -65,6 +84,7 @@ const CustomCursor = () => {
     const animationId = requestAnimationFrame(animateOutline);
 
     return () => {
+      window.removeEventListener('resize', checkMobile);
       window.removeEventListener('mousemove', onMouseMove);
       window.removeEventListener('mousedown', onMouseDown);
       window.removeEventListener('mouseup', onMouseUp);
@@ -74,6 +94,8 @@ const CustomCursor = () => {
       cancelAnimationFrame(animationId);
     };
   }, []);
+
+  if (isMobile) return null;
 
   return (
     <>
