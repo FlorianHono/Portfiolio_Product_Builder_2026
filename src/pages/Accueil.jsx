@@ -101,9 +101,12 @@ export default function Accueil() {
         <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none overflow-hidden mix-blend-multiply">
           <img
             alt="Workflow automation diagram"
+            width="1920"
+            height="1080"
             className="parallax-bg w-[120%] h-[120%] -translate-x-[10%] -translate-y-[10%] object-cover scale-110"
             src="https://lh3.googleusercontent.com/aida/ADBb0ugY6OtPSFzDElhf0BvBRDp7EvIgUp7kE8JP24TPjZf9GXKTgGyLHjRtYPfifez5JVg_4yv0DX-tfXrHLstoPRHGa7Hl8X9zQMnbhmEpu0lpNv1T3IqU216jFyd4b15RqIKfQOhYjC41ruGPFBCeFZAmKpiMHG4ljV6rwDdxgOHRJQaF8rfLci8fCcX9Jt7rt-mVkAz4iu5m1pvcDIRe7_L2Kpgue0MWSMrqKqz2Wp7a7GOKc84OmsgPCA"
-            loading="lazy"
+            fetchpriority="high"
+            decoding="async"
           />
         </div>
 
@@ -156,8 +159,11 @@ export default function Accueil() {
                   <img 
                     src={profilePic}
                     alt="Florian Honoré"
+                    width="450"
+                    height="550"
                     className="w-[450px] h-[550px] object-cover object-[center_15%] filter grayscale contrast-[1.1] brightness-[1.05] mix-blend-multiply"
-                    loading="lazy"
+                    fetchpriority="high"
+                    decoding="async"
                   />
                   {/* Architectural accents */}
                   <div className="absolute -top-1 -right-1 w-8 h-8 border-t-2 border-r-2 border-primary"></div>

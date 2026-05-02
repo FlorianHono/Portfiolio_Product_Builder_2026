@@ -92,9 +92,12 @@ export default function APropos() {
       <section className="h-[500px] border-y border-outline-variant overflow-hidden relative group">
         <img 
           alt="Architectural vision" 
+          width="1600"
+          height="500"
           className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" 
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Ff0dlOSCvBFOOBMCSxkDEjqo5cehTTiUEzn0DnB9HljU2JVYhJgoYnWpaZQu9C1RtAXQfZmqg8tnXmQm4wCkFQ58-0EXSkxZyYQq5-F4scEThU-mEEH_9jkUN7ZKivGcKtESmxYypOrQwwNtFMV_f9SQMFwawqSPKrLlI6In-S4zltjJqCBDLq_gOuJAjAY4JsTxFD0UIyrSkGaA6TWG9V-ilFClC5HNhkHCw-d9Cqf5vEeuclHW23Z00vHrv6vd0UVbAEMNtXc"
           loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent"></div>
         <div className="absolute bottom-12 md:bottom-20 left-6 md:left-12 lg:left-24">

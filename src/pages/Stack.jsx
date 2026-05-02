@@ -50,7 +50,7 @@ export default function Stack() {
         </div>
 
         <div className="md:col-span-4 bg-surface-container p-8 flex items-center justify-center relative overflow-hidden group">
-          <img className="object-cover w-full h-full opacity-30 grayscale contrast-125 absolute inset-0" alt="Abstract neural networks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiCrpJ0Z_IuGFopYUZBaaIp7CPVDL0S2QzEf11jYSBroBkNsv2xy8ZXplJR9BQ6YDGtMF1LGq5pQ1MSs0xyQ1DVU7GwkTJVvxCwzNkZ9ZxN0_F3SP-O7FHUsuA_0trwLGzXjz2Q0K2RHp9qlaskWPIN-4Ci3Y0sxY0J7LmnlXYx8Sy3MOsKUjf3sc8Q_7wcoX96KH6xowrE_uIwKDvuNrzJ5b7Muu69vEbCepCA5JjbF3Yb_33BkL6WxV9gWY2YI2xB7RU4rkVD5w" loading="lazy"/>
+          <img className="object-cover w-full h-full opacity-30 grayscale contrast-125 absolute inset-0" alt="Abstract neural networks" width="800" height="320" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiCrpJ0Z_IuGFopYUZBaaIp7CPVDL0S2QzEf11jYSBroBkNsv2xy8ZXplJR9BQ6YDGtMF1LGq5pQ1MSs0xyQ1DVU7GwkTJVvxCwzNkZ9ZxN0_F3SP-O7FHUsuA_0trwLGzXjz2Q0K2RHp9qlaskWPIN-4Ci3Y0sxY0J7LmnlXYx8Sy3MOsKUjf3sc8Q_7wcoX96KH6xowrE_uIwKDvuNrzJ5b7Muu69vEbCepCA5JjbF3Yb_33BkL6WxV9gWY2YI2xB7RU4rkVD5w" loading="lazy" decoding="async"/>
           <div className="relative z-10 text-center">
             <span className="material-symbols-outlined text-4xl text-primary">psychology</span>
           </div>
