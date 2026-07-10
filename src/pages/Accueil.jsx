@@ -228,7 +228,7 @@ export default function Accueil() {
               {
                 num: "01",
                 title: "Budgets & Délais",
-                desc: "J'ai un projet en tête depuis des mois, mais chaque devis de dev est hors budget ou prend trois mois.",
+                desc: "J'ai un projet en tête depuis des mois, mais chaque devis est hors budget, et ça prend trois mois avant même de démarrer.",
                 icon: "payments"
               },
               {
