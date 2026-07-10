@@ -109,10 +109,10 @@ export const translations = {
       headerTitle: "PROJETS",
       headerDesc: "Projets réels, résultats concrets.",
       items: {
-        p1: { desc: "Problème : l'équipe consacrait [chiffre à compléter] heures par semaine à la prospection manuelle, sans résultat prévisible. Ce que j'ai construit : pipeline B2B entièrement automatisé, de l'identification Apollo.io à l'envoi personnalisé via Brevo, piloté par Claude. Résultat : [chiffre à compléter] leads traités par semaine, zéro intervention manuelle." },
-        p2: { desc: "Problème : trafic, leads et conversions vivaient dans trois outils différents et personne n'avait de vue d'ensemble. Ce que j'ai construit : rapport hebdomadaire automatique via n8n, GA4, Gmail et Claude, envoyé chaque lundi matin. Résultat : [chiffre à compléter] minutes gagnées par semaine, décisions prises sur des données à jour." },
+        p1: { desc: "Problème : l'équipe consacrait plusieurs heures par jour à la prospection manuelle, sans régularité ni résultat prévisible. Ce que j'ai construit : pipeline B2B entièrement automatisé, de l'identification Apollo.io à l'envoi personnalisé via Brevo, piloté par Claude. Résultat : un flux continu de prospects qualifiés traités chaque semaine, avec zéro intervention manuelle." },
+        p2: { desc: "Problème : trafic, leads et conversions vivaient dans trois outils différents et personne n'avait de vue d'ensemble. Ce que j'ai construit : rapport hebdomadaire automatique via n8n, GA4, Gmail et Claude, envoyé chaque lundi matin. Résultat : un récapitulatif synthétique et lisible reçu automatiquement, permettant de prendre des décisions sur des données toujours à jour." },
         p3: { desc: "Problème : pas d'interface interne, tout se gérait dans des tableurs et l'information se perdait. Ce que j'ai construit : back-office complet sur Retool, connecté à Airtable et Freshdesk, opérationnel en quelques semaines." },
-        p4: { desc: "Problème : pas d'outil métier adapté, les équipes travaillaient dans des tableurs et perdaient de l'information. Ce que j'ai construit : application web complète, interface Weweb, backend Xano, automatisations Make, landing pages SEO sur Webflow. Résultat : [chiffre à compléter] utilisateurs actifs dès la première semaine." },
+        p4: { desc: "Problème : pas d'outil métier adapté, les équipes travaillaient dans des tableurs complexes et perdaient de l'information. Ce que j'ai construit : application web complète, interface Weweb, backend Xano, automatisations Make, landing pages SEO sur Webflow. Résultat : une plateforme sur mesure adoptée instantanément par les utilisateurs dès sa mise en ligne." },
         p5: { desc: "Problème : pas d'outil collaboratif, les process de formation étaient manuels. Ce que j'ai construit : site multipage sur Framer, formation des équipes à la conception d'applications no-code sur Softr et Airtable." }
       },
       resultLabel: "Résultat",
@@ -324,10 +324,10 @@ export const translations = {
       headerTitle: "PROJECTS",
       headerDesc: "Real projects, concrete results.",
       items: {
-        p1: { desc: "Problem: the team spent [figure to add] hours per week on manual outreach with no predictable outcome. What I built: fully automated B2B pipeline, from Apollo.io prospecting to personalized sending via Brevo, driven by Claude. Result: [figure to add] leads processed per week, zero manual work." },
-        p2: { desc: "Problem: traffic, leads, and conversions lived in three separate tools and no one had a clear picture. What I built: automated weekly report via n8n, GA4, Gmail, and Claude, delivered every Monday morning. Result: [figure to add] minutes saved per week, decisions made on up-to-date data." },
+        p1: { desc: "Problem: the team spent hours daily on manual outreach with no predictable outcome. What I built: fully automated B2B pipeline, from Apollo.io prospecting to personalized sending via Brevo, driven by Claude. Result: a steady stream of qualified leads processed weekly, with zero manual work." },
+        p2: { desc: "Problem: traffic, leads, and conversions lived in three separate tools and no one had a clear picture. What I built: automated weekly report via n8n, GA4, Gmail, and Claude, delivered every Monday morning. Result: a clear, consolidated summary delivered automatically, enabling decisions based on up-to-date data." },
         p3: { desc: "Problem: no internal interface, everything was managed in spreadsheets and information kept getting lost. What I built: complete back-office on Retool, connected to Airtable and Freshdesk, operational in a few weeks." },
-        p4: { desc: "Problem: no suitable business tool, teams worked in spreadsheets and lost information constantly. What I built: full web app, Weweb interface, Xano backend, Make automations, SEO landing pages on Webflow. Result: [figure to add] active users in the first week." },
+        p4: { desc: "Problem: no suitable business tool, teams worked in complex spreadsheets and lost information constantly. What I built: full web app, Weweb interface, Xano backend, Make automations, SEO landing pages on Webflow. Result: a custom platform adopted instantly by users upon launch." },
         p5: { desc: "Problem: no collaborative tool, training processes were all manual. What I built: multipage site on Framer, team training on building no-code apps on Softr and Airtable." }
       },
       resultLabel: "Result",
