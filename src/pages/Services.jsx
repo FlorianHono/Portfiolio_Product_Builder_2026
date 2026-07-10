@@ -16,7 +16,7 @@ export default function Services() {
       pourQui: t('services.page.s1.pourQui'),
       ceFaireDesc: t('services.page.s1.ceFaireDesc'),
       ceRecois: t('services.page.s1.ceRecois'),
-      outils: ['N8N', 'Make', 'Claude API', 'OpenAI', 'Brevo', 'Apollo.io', 'Gmail', 'Google Analytics'],
+      outils: ['Webflow', 'Framer', 'WordPress', 'Weweb', 'Softr', 'Retool', 'Airtable', 'Xano'],
     },
     {
       num: '02',
@@ -24,15 +24,7 @@ export default function Services() {
       pourQui: t('services.page.s2.pourQui'),
       ceFaireDesc: t('services.page.s2.ceFaireDesc'),
       ceRecois: t('services.page.s2.ceRecois'),
-      outils: ['Weweb', 'Softr', 'Framer', 'Webflow', 'Xano', 'Airtable', 'Retool', 'Supabase', 'Antigravity'],
-    },
-    {
-      num: '03',
-      title: t('services.s3.title'),
-      pourQui: t('services.page.s3.pourQui'),
-      ceFaireDesc: t('services.page.s3.ceFaireDesc'),
-      ceRecois: t('services.page.s3.ceRecois'),
-      outils: ['N8N', 'Airtable', 'PostgreSQL', 'Supabase', 'Google Analytics', 'Retool', 'Xano'],
+      outils: ['N8N', 'Make', 'Claude API', 'OpenAI', 'Brevo', 'Apollo.io', 'GA4', 'Gmail'],
     },
   ];
 

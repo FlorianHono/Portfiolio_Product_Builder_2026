@@ -109,13 +109,13 @@ export default function Accueil() {
   return (
     <>
       <SEO 
-        title="Product Builder IA & No-Code" 
-        description="Florian Honoré, Product Builder spécialisé en IA et No-Code. Je construis vos automatisations et interfaces en quelques semaines."
+        title="Développeur No-Code & Automatisation IA · Florian Honoré" 
+        description="Vous avez un projet à construire mais chaque devis est hors budget ou prend trois mois. Je construis vos sites, apps et automatisations, opérationnel en quelques jours."
       />
       <section className="relative min-h-[calc(100vh-80px)] flex flex-col pt-12 md:pt-16 px-6 md:px-12 lg:px-24 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none overflow-hidden mix-blend-multiply">
           <img
-            alt="Workflow automation diagram"
+            alt="Florian Honoré, développeur no-code et automatisation IA"
             width="1920"
             height="1080"
             className="parallax-bg w-[120%] h-[120%] -translate-x-[10%] -translate-y-[10%] object-cover scale-110"
@@ -129,7 +129,7 @@ export default function Accueil() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 xl:col-span-8">
               <span className="font-space text-sm md:text-base tracking-[0.4em] uppercase text-primary mb-5 block font-bold reveal delay-1">
-                Florian Honoré Portfolio
+                Florian Honoré · Développeur No-Code & Automatisation IA
               </span>
               <h1 className="font-inter font-black text-huge tracking-[-0.04em] text-on-surface mb-7 drop-shadow-sm reveal delay-2">
                 PRODUCT<br />
@@ -145,8 +145,17 @@ export default function Accueil() {
               </div>
 
               <div className="max-w-xl">
-                <p className="font-space text-lg md:text-xl text-secondary leading-relaxed mb-8 font-light">
-                  {t('hero.description').split('Opérationnel')[0]} <span className="text-primary font-medium italic">{language === 'fr' ? 'Opérationnel en quelques jours.' : 'Operational in a few days.'}</span>
+                {/* Accroche principale */}
+                <p className="font-space text-2xl md:text-3xl text-on-surface leading-snug mb-4 font-medium reveal delay-3">
+                  {t('hero.faster')}<br/>
+                  <span className="text-primary">{t('hero.noTech')}</span>
+                </p>
+                {/* Sous-accroche tags */}
+                <p className="font-space text-xs md:text-sm tracking-[0.25em] uppercase text-secondary mb-8 font-bold">
+                  {t('hero.tags')}
+                </p>
+                <p className="font-space text-base md:text-lg text-secondary leading-relaxed mb-8 font-light">
+                  {t('hero.description')} <span className="text-primary font-medium italic">{t('hero.descriptionSuffix')}</span>
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 reveal delay-4">
                   <Link to="/projets" className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 py-3 font-space font-bold uppercase tracking-widest text-xs overflow-hidden">
@@ -184,7 +193,7 @@ export default function Accueil() {
                   <div className="absolute -top-1 -right-1 w-8 h-8 border-t-2 border-r-2 border-primary"></div>
                   <div className="absolute -bottom-1 -left-1 w-8 h-8 border-b-2 border-l-2 border-primary"></div>
                   <div className="absolute top-full mt-4 right-0 font-space text-[10px] tracking-[0.3em] text-outline uppercase">
-                    Ref. / Product Builder 2026
+                    Florian Honoré · Product Builder 2026
                   </div>
                 </div>
               </div>
@@ -202,6 +211,35 @@ export default function Accueil() {
         </div>
       </section>
 
+      {/* Section : Vous en êtes là ? */}
+      <section className="px-6 md:px-12 lg:px-24 py-20 border-t-[1px] border-outline-variant/30 bg-surface-container-lowest relative z-20">
+        <div className="max-w-[1600px] mx-auto">
+          <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface mb-12 reveal">
+            Vous en êtes là ?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+            {[
+              "J'ai un projet en tête depuis des mois, mais chaque devis de dev est hors budget ou prend trois mois.",
+              "Mon équipe passe ses journées à copier-coller, et des clients passent à la trappe.",
+              "On me dit d'automatiser et d'utiliser l'IA, je ne sais pas par où commencer.",
+              "J'ai déjà fait bricoler un truc, ça a cassé, et personne ne sait le réparer.",
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-5 py-6 border-t border-outline-variant/30 group hover:border-primary transition-colors duration-300">
+                <span className="font-space text-xs font-bold text-primary mt-1 flex-shrink-0">0{i + 1}</span>
+                <p className="font-space text-sm md:text-base text-secondary leading-relaxed group-hover:text-on-surface transition-colors duration-300">{item}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 pt-8 border-t-2 border-primary">
+            <p className="font-inter font-black text-xl md:text-2xl uppercase tracking-tighter text-on-surface">
+              C'est exactement ce que je débloque.
+              <span className="text-primary"> Vite, sans usine à gaz, et sans que vous ayez à tout comprendre.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Services */}
       <section className="px-6 md:px-12 lg:px-24 py-20 border-t-[1px] border-outline-variant/30 bg-surface relative z-20">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 max-w-[1600px] mx-auto">
           <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface reveal">{t('services.title')}</h2>
@@ -210,7 +248,7 @@ export default function Accueil() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1600px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[1600px] mx-auto">
           <div className="border-t-[1px] border-outline-variant/30 pt-8 flex flex-col group hover:border-primary transition-colors duration-500">
             <span className="font-space text-xs font-bold text-primary mb-4 block">01</span>
             <h3 className="font-inter font-bold text-2xl uppercase mb-6 text-on-surface">{t('services.s1.title')}</h3>
@@ -234,20 +272,9 @@ export default function Accueil() {
             </Link>
             <div className="h-[2px] w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
           </div>
-
-          <div className="border-t-[1px] border-outline-variant/30 pt-8 flex flex-col group hover:border-primary transition-colors duration-500">
-            <span className="font-space text-xs font-bold text-primary mb-4 block">03</span>
-            <h3 className="font-inter font-bold text-2xl uppercase mb-6 text-on-surface">{t('services.s3.title')}</h3>
-            <p className="text-secondary font-space text-sm leading-relaxed mb-8 flex-grow">
-              {t('services.s3.desc')}
-            </p>
-            <Link to="/projets" className="inline-flex items-center gap-2 font-space text-xs uppercase tracking-widest text-on-surface group-hover:text-primary transition-colors mb-6 mt-auto w-fit">
-              {t('services.s3.cta')} <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
-            </Link>
-            <div className="h-[2px] w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
-          </div>
         </div>
       </section>
+
 
       <section className="bg-surface-container-low px-6 md:px-12 lg:px-24 py-20 border-y-[1px] border-outline-variant/30">
         <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row gap-12 lg:gap-20">
@@ -297,6 +324,64 @@ export default function Accueil() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section différenciateur */}
+      <section className="px-6 md:px-12 lg:px-24 py-20 bg-surface relative z-20">
+        <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-2">
+            <div className="w-12 h-[2px] bg-primary mb-4"></div>
+            <span className="font-space text-[10px] uppercase tracking-[0.3em] text-primary font-bold">Différenciateur</span>
+          </div>
+          <div className="lg:col-span-6">
+            <h2 className="font-inter font-black text-2xl md:text-4xl uppercase tracking-tighter text-on-surface mb-6 reveal">
+              L'automatisation<br/><span className="text-primary">sans perdre la main.</span>
+            </h2>
+            <p className="font-space text-sm md:text-base text-secondary leading-relaxed">
+              Je ne livre pas une boîte noire. Chaque système que je construis est documenté, expliqué, et conçu pour que votre équipe puisse le comprendre et le faire évoluer. L'humain garde la décision là où elle compte : le reste tourne tout seul. Pas de dépendance, pas d'usine à gaz.
+            </p>
+          </div>
+          <div className="lg:col-span-4 flex flex-col gap-4">
+            {[
+              { label: "Systèmes documentés", icon: "description" },
+              { label: "Maintenables par votre équipe", icon: "group" },
+              { label: "Pas de dépendance", icon: "link_off" },
+            ].map((item) => (
+              <div key={item.label} className="flex items-center gap-4 py-4 border-b border-outline-variant/30">
+                <span className="material-symbols-outlined text-primary text-xl">{item.icon}</span>
+                <span className="font-space text-sm font-bold uppercase tracking-widest text-on-surface">{item.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bandeau disponibilité */}
+      <section className="px-6 md:px-12 lg:px-24 py-10 border-t border-outline-variant/30 bg-surface-container-lowest relative z-20">
+        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-4">
+            <span className="inline-block w-2 h-2 bg-primary rounded-full animate-pulse flex-shrink-0"></span>
+            <p className="font-space text-sm text-secondary">
+              <span className="text-on-surface font-bold">Disponible</span> pour missions freelance, CDD ou CDI. Remote ou hybride Île-de-France.
+            </p>
+          </div>
+          <div className="flex items-center gap-6 flex-shrink-0">
+            <a
+              href="https://www.linkedin.com/in/florian-honore-dwwm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-space text-[10px] uppercase tracking-widest text-secondary hover:text-primary transition-colors border-b border-outline-variant/50 hover:border-primary pb-0.5"
+            >
+              Profil LinkedIn
+            </a>
+            <Link
+              to="/contact"
+              className="font-space text-[10px] uppercase tracking-widest text-secondary hover:text-primary transition-colors border-b border-outline-variant/50 hover:border-primary pb-0.5"
+            >
+              Me contacter
+            </Link>
           </div>
         </div>
       </section>

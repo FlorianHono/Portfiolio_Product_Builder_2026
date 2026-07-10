@@ -8,67 +8,58 @@ export const translations = {
       methode: "Méthode",
       aPropos: "À Propos",
       contact: "Contact",
-      launch: "Lancer un projet"
+      launch: "Démarrer un projet"
     },
     hero: {
-      title: "PRODUCT BUILDER : PLUS VITE SANS ÉQUIPE TECH LOURDE",
-      subtitle: "Je transforme vos idées en produits scalables avec l'IA et le No-Code.",
+      title: "Développeur No-Code & Automatisation IA · Florian Honoré",
+      subtitle: "Vous savez ce qu'il vous faut. Vous n'arrivez juste pas à le faire construire.",
       cta: "Voir mes projets",
       start: "Démarrer un projet",
-      faster: "Plus vite",
-      noTech: "Sans équipe tech lourde",
-      description: "Je construis les systèmes que ton équipe n'a pas le temps de créer, automatisations, agents IA, ainsi que des interfaces. Opérationnel",
-      descriptionSuffix: "en quelques jours.",
-      clientText: "Ils ont gagné du temps :"
+      faster: "Vous savez ce qu'il vous faut.",
+      noTech: "Vous n'arrivez juste pas à le faire construire.",
+      tags: "SITES • APPS • AUTOMATISATIONS • AGENTS IA",
+      description: "Devis hors budget, délais à rallonge, et ce truc bricolé qui a fini par casser sans que personne sache le réparer. Résultat : vous subissez vos outils au lieu de les piloter. Je construis vos sites, vos apps et vos automatisations, avec l'IA branchée là où elle sert vraiment, et des systèmes que votre équipe comprend et garde en main.",
+      descriptionSuffix: "Opérationnel en quelques jours, sans usine à gaz.",
+      clientText: "Ils m'ont fait confiance :"
     },
     services: {
       title: "Services",
-      intro: "Tu veux aller vite, sans recruter une équipe tech. Je construis ce dont tu as besoin et tu gardes la main.",
+      intro: "Pour les entrepreneurs, les équipes qui veulent aller vite, et les PME qui veulent industrialiser sans recruter.",
       s1: {
-        title: "Automatisation IA",
-        desc: "Tes tâches répétitives tournent en boucle et bouffent du temps à ton équipe. Je les automatise avec l'IA (prospection, reporting, traitement de données) sans que tu aies à t'en occuper.",
-        cta: "Voir un exemple"
+        title: "Web & Interfaces",
+        desc: "Vous avez besoin d'un site, d'une app ou d'une interface opérationnelle, sans passer par une agence ou recruter un dev. Sites vitrines, Webflow, Framer, WordPress, apps métier. Livré en jours, pas en trimestres.",
+        cta: "Voir mes projets"
       },
       s2: {
-        title: "Développement Low-Code",
-        desc: "Une app interne, un back-office, un outil sur mesure. Développé en quelques semaines, pas en plusieurs mois. Sans compromis sur la qualité.",
-        cta: "Voir un exemple"
-      },
-      s3: {
-        title: "Reporting & Données",
-        desc: "Tu prends des décisions sur des données éparpillées dans dix outils différents. Je centralise tout dans un dashboard clair, en temps réel.",
-        cta: "En savoir plus"
+        title: "Automatisation & Agents IA",
+        desc: "Votre équipe perd du temps sur des tâches répétitives, ou vous voulez connecter vos outils et intégrer l'IA sans recruter. Workflows n8n / Make, agents IA, intégration Claude et OpenAI dans vos process.",
+        cta: "Voir mes projets"
       },
       page: {
-        seoTitle: "Services",
-        seoDesc: "Services de product building : automatisations IA, développement low-code et reporting de données.",
-        headerLabel: "Florian Honoré Portfolio",
+        seoTitle: "Services · Développeur No-Code & Automatisation IA",
+        seoDesc: "Sites, apps, automatisations et agents IA pour les entrepreneurs et équipes qui veulent aller vite sans recruter une équipe tech.",
+        headerLabel: "Florian Honoré",
         headerTitle: "SERVICES",
-        headerDesc: "Ce que je construis pour toi, de A à Z.",
+        headerDesc: "Deux blocs, un objectif : que votre projet existe et tourne.",
         s1: {
-          pourQui: "Tu as des tâches répétitives qui bouffent du temps à ton équipe.",
-          ceFaireDesc: "Prospection automatisée, reporting, traitement de données, emails personnalisés par IA. Je connecte tes outils entre eux et j'intègre des LLMs directement dans tes workflows.",
-          ceRecois: "Un système qui tourne sans toi. Documenté, testé, opérationnel."
+          pourQui: "Vous avez besoin d'un site, d'une app ou d'une interface opérationnelle, sans passer par une agence ou recruter un développeur.",
+          ceFaireDesc: "Sites vitrines, WordPress, Webflow, Framer. Application web sur mesure, interface métier, back-office. SEO intégré dès le départ, de la maquette à la mise en ligne.",
+          ceRecois: "Un site ou une app livrés, indexés, utilisables dès le premier jour. En jours, pas en trimestres."
         },
         s2: {
-          pourQui: "Tu as besoin d'un outil interne, d'un back-office ou d'une app métier, sans monter une équipe dev.",
-          ceFaireDesc: "Je conçois et développe des applications web sur mesure. Interface, logique métier, base de données, API. Du prototype à la mise en production.",
-          ceRecois: "Une app utilisable par ton équipe dès le premier jour. Livrée en semaines, pas en mois."
-        },
-        s3: {
-          pourQui: "Tu prends des décisions sur des données éparpillées dans dix outils différents.",
-          ceFaireDesc: "Je centralise tes indicateurs clés dans un dashboard unique, connecté à tes sources en temps réel. GA4, CRM, base de données, tout au même endroit.",
-          ceRecois: "Une vision claire de ce qui se passe dans ton business, sans ouvrir dix onglets."
+          pourQui: "Vos équipes perdent du temps sur des tâches répétitives, ou vous voulez connecter vos outils et intégrer l'IA sans recruter à plein temps.",
+          ceFaireDesc: "Workflows n8n / Make, agents IA, connexion d'APIs (Claude, OpenAI, Brevo, Apollo, GA4…). Prospection automatisée, reporting, traitement de données, emails personnalisés.",
+          ceRecois: "Vos process tournent sans vous. Chaque système est documenté et maintenable par votre équipe. Pas de boîte noire, pas de dépendance."
         },
         labels: {
           pourQui: "Pour qui",
-          ceFaireDesc: "Ce que je fais",
-          ceRecois: "Ce que tu reçois",
+          ceFaireDesc: "Ce que je construis",
+          ceRecois: "Ce que vous gagnez",
           outils: "Outils",
           start: "Démarrer un projet"
         },
-        ctaTitle: "Un projet qui ne rentre pas<br />dans ces cases ? Parlons-en.",
-        ctaBtn: "On en parle ?"
+        ctaTitle: "Votre projet ne rentre pas<br />dans ces cases ? Racontez-moi ce qui coince.",
+        ctaBtn: "Décrire mon projet"
       }
     },
     stack: {
@@ -103,62 +94,62 @@ export const translations = {
       }
     },
     cta: {
-      title: "TU VEUX<br />ALLER PLUS VITE ?",
-      subtitle: "Dis-moi ce qui te prend trop de temps. On règle ça ensemble.",
-      button: "Lancer le projet"
+      title: "VOTRE PROJET<br />ATTEND DEPUIS TROP LONGTEMPS ?",
+      subtitle: "Décrivez-moi ce qui bloque. Je vous réponds sous 24h.",
+      button: "Démarrer maintenant"
     },
     footer: {
       rights: "© 2026 FLORIAN HONORÉ. TOUS DROITS RÉSERVÉS.",
       legal: "MENTIONS LÉGALES"
     },
     projets: {
-      seoTitle: "Projets",
-      seoDesc: "Découvrez les projets réalisés par Florian Honoré : automatisations IA, applications métier no-code et outils internes.",
-      headerLabel: "Florian Honoré Portfolio",
+      seoTitle: "Projets · Sites, apps et automatisations réalisés",
+      seoDesc: "Projets réels de Florian Honoré : automatisation B2B, reporting data, application web no-code. Résultats concrets pour des fondateurs et des équipes.",
+      headerLabel: "Florian Honoré",
       headerTitle: "PROJETS",
-      headerDesc: "Archives sélectionnées. 2024. 2026.",
+      headerDesc: "Projets réels, résultats concrets.",
       items: {
-        p1: { desc: "L'équipe perdait des heures chaque semaine sur la prospection manuelle. J'ai automatisé l'intégralité du pipeline avec N8N et Claude API, de la collecte Apollo.io à l'envoi personnalisé via Brevo." },
-        p2: { desc: "Les données business étaient éparpillées entre Gmail, GA4 et des exports manuels. J'ai centralisé tout ça dans un dashboard temps réel connecté via N8N et Claude API." },
-        p3: { desc: "Pas d'interface interne, tout se gérait dans des tableurs. J'ai conçu et développé un back-office complet sur Retool, opérationnel en quelques semaines." },
-        p4: { desc: "Une app métier construite de zéro, design UI/UX sur Figma, développement sur Weweb, backend sur Xano. Livré dans le cadre d'un contrat pro." },
-        p5: { desc: "Design UI/UX et site multipage sur Framer. Formation des équipes à la conception d'applications web no-code sur Softr et Airtable." }
+        p1: { desc: "Problème : l'équipe consacrait [chiffre à compléter] heures par semaine à la prospection manuelle, sans résultat prévisible. Ce que j'ai construit : pipeline B2B entièrement automatisé, de l'identification Apollo.io à l'envoi personnalisé via Brevo, piloté par Claude. Résultat : [chiffre à compléter] leads traités par semaine, zéro intervention manuelle." },
+        p2: { desc: "Problème : trafic, leads et conversions vivaient dans trois outils différents et personne n'avait de vue d'ensemble. Ce que j'ai construit : rapport hebdomadaire automatique via n8n, GA4, Gmail et Claude, envoyé chaque lundi matin. Résultat : [chiffre à compléter] minutes gagnées par semaine, décisions prises sur des données à jour." },
+        p3: { desc: "Problème : pas d'interface interne, tout se gérait dans des tableurs et l'information se perdait. Ce que j'ai construit : back-office complet sur Retool, connecté à Airtable et Freshdesk, opérationnel en quelques semaines." },
+        p4: { desc: "Problème : pas d'outil métier adapté, les équipes travaillaient dans des tableurs et perdaient de l'information. Ce que j'ai construit : application web complète, interface Weweb, backend Xano, automatisations Make, landing pages SEO sur Webflow. Résultat : [chiffre à compléter] utilisateurs actifs dès la première semaine." },
+        p5: { desc: "Problème : pas d'outil collaboratif, les process de formation étaient manuels. Ce que j'ai construit : site multipage sur Framer, formation des équipes à la conception d'applications no-code sur Softr et Airtable." }
       },
       resultLabel: "Résultat",
-      ctaTitle: "Prêt à lancer<br />le prochain projet ?"
+      ctaTitle: "Votre projet a une douleur précise.<br />Parlons-en."
     },
     apropos: {
-      seoTitle: "À Propos",
-      seoDesc: "En savoir plus sur Florian Honoré : son parcours de l'infographie 3D au product building, sa vision et ses expériences.",
+      seoTitle: "À Propos · Florian Honoré, Développeur No-Code & Automatisation IA",
+      seoDesc: "Florian Honoré, développeur no-code et automatisation IA. Freelance disponible pour missions, CDD ou CDI en Île-de-France et remote.",
       profileVision: "Profil / Vision",
-      h1p1: "BUILDER.",
-      h1p2: "PAS JUSTE DÉVELOPPEUR.",
-      bio1: "Formé à l'infographie 3D et aux effets spéciaux, j'ai fait une reconversion vers le développement web avant de glisser naturellement vers le product building.",
-      bio2: "Aujourd'hui je combine les deux mondes : je pense en systèmes visuels et je construis en no-code et IA. J'automatise ce qui prend trop de temps et je construis ce qui manque.",
+      h1p1: "DÉVELOPPEUR.",
+      h1p2: "PAS JUSTE EXÉCUTANT.",
+      bio1: "Formé à l'infographie 3D, reconverti au développement web, je me suis spécialisé là où ça va vite et ça crée de la valeur réelle : le no-code, l'automatisation et l'IA appliquée.",
+      bio2: "Depuis 2022, je construis des sites, des apps et des systèmes d'automatisation pour des fondateurs et des équipes qui veulent avancer sans recruter. Je pose l'IA là où elle sert vraiment, et je livre des systèmes que votre équipe comprend et garde en main.",
       expertiseTitle: "Expertise",
       focusTitle: "Focus",
       history: "Historique",
       exp: "Expériences",
       roles: {
-        r1: { role: "PRODUCT BUILDER IA" },
+        r1: { role: "DÉVELOPPEUR NO-CODE & AUTOMATISATION IA" },
         r2: { role: "DÉVELOPPEUR LOWCODE" },
         r3: { role: "PRODUCT BUILDER / FORMATEUR" },
         r4: { role: "DÉVELOPPEUR LOWCODE" },
         r5: { role: "Developer Intern" }
       },
-      banner: "CONSTRUIRE VITE.<br/>AUTOMATISER LE RESTE."
+      banner: "CONSTRUIRE VITE.<br/>GARDER LA MAIN."
     },
     contact: {
-      seoTitle: "Contact",
-      seoDesc: "Contactez Florian Honoré pour vos projets d'automatisation IA et de product building. Réservez un call ou envoyez un email.",
-      status: "STATUS : DISPONIBLE",
-      loc: "LOC: PARIS / REMOTE",
-      h1p1: "TRAVAILLONS",
-      h1p2: "ENSEMBLE.",
-      s1Title: "01. INTENTION",
-      s1Text: "Tu as un projet à automatiser ou à construire ? Réserve un call de 30 min, on regarde ensemble ce qui est faisable.",
+      seoTitle: "Contact · Florian Honoré",
+      seoDesc: "Contactez Florian Honoré pour vos projets de sites, apps ou automatisations IA. Disponible en freelance, CDD ou CDI.",
+      status: "DISPONIBLE · FREELANCE / CDD / CDI",
+      loc: "ÎLE-DE-FRANCE · REMOTE",
+      h1p1: "UN PROJET,",
+      h1p2: "UNE CONTRAINTE ?",
+      s1Title: "01. VOTRE PROJET",
+      s1Text: "Vous avez un projet à construire ou à automatiser ? Réservez un call de 30 minutes : on regarde ensemble ce qui coince et ce qu'on peut faire.",
       btnCall: "RÉSERVER UN CALL →",
-      writeAlt: "Tu préfères écrire ?",
+      writeAlt: "Vous préférez écrire ?",
       s2Title: "02. DIRECT",
       email: "EMAIL",
       socials: "RÉSEAUX",
@@ -229,64 +220,55 @@ export const translations = {
       launch: "Start a project"
     },
     hero: {
-      title: "PRODUCT BUILDER: FASTER WITHOUT A HEAVY TECH TEAM",
-      subtitle: "I turn your ideas into scalable products using AI and No-Code.",
+      title: "No-Code Developer & AI Automation · Florian Honoré",
+      subtitle: "You know what you need. You just can't get it built.",
       cta: "View my projects",
       start: "Start a project",
-      faster: "Faster",
-      noTech: "Without a heavy tech team",
-      description: "I build the systems your team doesn't have time to create, automations, AI agents, and interfaces. Operational",
-      descriptionSuffix: "in a few days.",
-      clientText: "They saved time:"
+      faster: "You know what you need.",
+      noTech: "You just can't get it built.",
+      tags: "WEBSITES • APPS • AUTOMATIONS • AI AGENTS",
+      description: "Quotes over budget, endless delays, and that makeshift thing that broke and nobody knows how to fix. Result: you're stuck managing your tools instead of running your business. I build your websites, apps, and automations, with AI plugged in where it actually helps, and systems your team understands and owns.",
+      descriptionSuffix: "Operational in a few days, no bloat.",
+      clientText: "They trusted me:"
     },
     services: {
       title: "Services",
-      intro: "You want to move fast, without hiring a tech team. I build what you need and you keep control.",
+      intro: "For founders, small teams that want to move fast, and businesses looking to scale without hiring.",
       s1: {
-        title: "AI Automation",
-        desc: "Your repetitive tasks eat up your team's time. I automate them with AI (outreach, reporting, data processing) without you having to worry about it.",
-        cta: "See an example"
+        title: "Web & Interfaces",
+        desc: "You need a website, app, or operational interface without going through an agency or hiring a dev. Landing pages, Webflow, Framer, WordPress, custom apps. Delivered in days, not quarters.",
+        cta: "View my projects"
       },
       s2: {
-        title: "Low-Code Development",
-        desc: "Internal apps, back-offices, custom tools. Developed in weeks, not months. No compromise on quality.",
-        cta: "See an example"
-      },
-      s3: {
-        title: "Reporting & Data",
-        desc: "You make decisions based on scattered data. I centralize everything in a clear, real-time dashboard.",
-        cta: "Learn more"
+        title: "Automation & AI Agents",
+        desc: "Your team wastes time on repetitive tasks, or you want to connect your tools and integrate AI without hiring full-time. n8n / Make workflows, AI agents, Claude and OpenAI integration.",
+        cta: "View my projects"
       },
       page: {
-        seoTitle: "Services",
-        seoDesc: "Product building services: AI automations, low-code development, and data reporting.",
-        headerLabel: "Florian Honoré Portfolio",
+        seoTitle: "Services · No-Code Developer & AI Automation",
+        seoDesc: "Websites, apps, automations, and AI agents for entrepreneurs and teams who want to move fast without hiring a tech team.",
+        headerLabel: "Florian Honoré",
         headerTitle: "SERVICES",
-        headerDesc: "What I build for you, from A to Z.",
+        headerDesc: "Two tracks, one goal: your project ships and runs.",
         s1: {
-          pourQui: "You have repetitive tasks eating up your team's time.",
-          ceFaireDesc: "Automated outreach, reporting, data processing, AI-personalized emails. I connect your tools and integrate LLMs directly into your workflows.",
-          ceRecois: "A system running without you. Documented, tested, and operational."
+          pourQui: "You need a website, app, or operational interface without going through an agency or hiring a developer.",
+          ceFaireDesc: "Landing pages, WordPress, Webflow, Framer. Custom web apps, business interfaces, back-offices. SEO built in from day one, from wireframe to launch.",
+          ceRecois: "A website or app that ships, gets indexed, and is usable from day one. In days, not quarters."
         },
         s2: {
-          pourQui: "You need an internal tool, a back-office, or a business app, without hiring a dev team.",
-          ceFaireDesc: "I design and build custom web applications. Interface, business logic, database, API. From prototype to production.",
-          ceRecois: "An app your team can use from day one. Delivered in weeks, not months."
-        },
-        s3: {
-          pourQui: "You make decisions based on data scattered across ten different tools.",
-          ceFaireDesc: "I centralize your key metrics into a single dashboard, connected to your sources in real-time. GA4, CRM, databases, all in one place.",
-          ceRecois: "A clear view of what's happening in your business, without opening ten tabs."
+          pourQui: "Your teams lose time on repetitive tasks, or you want to connect your tools and integrate AI without hiring full-time.",
+          ceFaireDesc: "n8n / Make workflows, AI agents, API connections (Claude, OpenAI, Brevo, Apollo, GA4…). Automated outreach, reporting, data processing, personalized emails.",
+          ceRecois: "Your processes run without you. Every system is documented and maintainable by your team. No black box, no dependency."
         },
         labels: {
           pourQui: "For who",
-          ceFaireDesc: "What I do",
-          ceRecois: "What you get",
+          ceFaireDesc: "What I build",
+          ceRecois: "What you gain",
           outils: "Tools",
           start: "Start a project"
         },
-        ctaTitle: "A project that doesn't fit<br />these boxes? Let's talk.",
-        ctaBtn: "Let's talk?"
+        ctaTitle: "Your project doesn't fit<br />these boxes? Tell me what's blocking you.",
+        ctaBtn: "Describe my project"
       }
     },
     stack: {
@@ -321,60 +303,60 @@ export const translations = {
       }
     },
     cta: {
-      title: "WANT TO<br />MOVE FASTER?",
-      subtitle: "Tell me what's taking too much time. Let's fix it together.",
-      button: "Start project"
+      title: "YOUR PROJECT HAS<br />WAITED LONG ENOUGH?",
+      subtitle: "Tell me what's blocking you. I'll get back to you within 24h.",
+      button: "Start now"
     },
     footer: {
       rights: "© 2026 FLORIAN HONORÉ. ALL RIGHTS RESERVED.",
       legal: "LEGAL NOTICE"
     },
     projets: {
-      seoTitle: "Projects",
-      seoDesc: "Discover projects created by Florian Honoré: AI automations, no-code business apps, and internal tools.",
-      headerLabel: "Florian Honoré Portfolio",
+      seoTitle: "Projects · Websites, Apps & Automations",
+      seoDesc: "Real projects by Florian Honoré: B2B automation, data reporting, no-code web apps. Concrete results for founders and teams.",
+      headerLabel: "Florian Honoré",
       headerTitle: "PROJECTS",
-      headerDesc: "Selected archives. 2024. 2026.",
+      headerDesc: "Real projects, concrete results.",
       items: {
-        p1: { desc: "The team lost hours every week on manual outreach. I automated the entire pipeline using N8N and Claude API, from Apollo.io collection to customized sending via Brevo." },
-        p2: { desc: "Business data was scattered across Gmail, GA4, and manual exports. I centralized everything into a real-time dashboard connected via N8N and Claude API." },
-        p3: { desc: "No internal interface, everything was managed in spreadsheets. I designed and built a complete back-office on Retool, operational in a few weeks." },
-        p4: { desc: "A business app built from scratch, UI/UX design on Figma, development on Weweb, backend on Xano. Delivered as part of a professional contract." },
-        p5: { desc: "UI/UX design and multipage site on Framer. Team training on building no-code web applications on Softr and Airtable." }
+        p1: { desc: "Problem: the team spent [figure to add] hours per week on manual outreach with no predictable outcome. What I built: fully automated B2B pipeline, from Apollo.io prospecting to personalized sending via Brevo, driven by Claude. Result: [figure to add] leads processed per week, zero manual work." },
+        p2: { desc: "Problem: traffic, leads, and conversions lived in three separate tools and no one had a clear picture. What I built: automated weekly report via n8n, GA4, Gmail, and Claude, delivered every Monday morning. Result: [figure to add] minutes saved per week, decisions made on up-to-date data." },
+        p3: { desc: "Problem: no internal interface, everything was managed in spreadsheets and information kept getting lost. What I built: complete back-office on Retool, connected to Airtable and Freshdesk, operational in a few weeks." },
+        p4: { desc: "Problem: no suitable business tool, teams worked in spreadsheets and lost information constantly. What I built: full web app, Weweb interface, Xano backend, Make automations, SEO landing pages on Webflow. Result: [figure to add] active users in the first week." },
+        p5: { desc: "Problem: no collaborative tool, training processes were all manual. What I built: multipage site on Framer, team training on building no-code apps on Softr and Airtable." }
       },
       resultLabel: "Result",
-      ctaTitle: "Ready to launch<br />the next project?"
+      ctaTitle: "Your project has a specific pain point.<br />Let's talk."
     },
     apropos: {
-      seoTitle: "About",
-      seoDesc: "Learn more about Florian Honoré: his journey from 3D graphics to product building, his vision, and his experiences.",
+      seoTitle: "About · Florian Honoré, No-Code Developer & AI Automation",
+      seoDesc: "Florian Honoré, no-code developer and AI automation specialist. Available for freelance, fixed-term, or permanent roles in Île-de-France and remote.",
       profileVision: "Profile / Vision",
-      h1p1: "BUILDER.",
-      h1p2: "NOT JUST A DEVELOPER.",
-      bio1: "Trained in 3D graphics and special effects, I transitioned into web development before naturally shifting toward product building.",
-      bio2: "Today I combine both worlds: I think in visual systems and I build with no-code and AI. I automate what takes too much time and I build what's missing.",
+      h1p1: "DEVELOPER.",
+      h1p2: "NOT JUST AN EXECUTOR.",
+      bio1: "Trained in 3D graphics, I transitioned into web development and specialized where things move fast and create real value: no-code, automation, and applied AI.",
+      bio2: "Since 2022, I've been building websites, apps, and automation systems for founders and teams who want to move forward without hiring. I apply AI where it genuinely helps, and I deliver systems your team understands and owns.",
       expertiseTitle: "Expertise",
       focusTitle: "Focus",
       history: "History",
       exp: "Experiences",
       roles: {
-        r1: { role: "AI PRODUCT BUILDER" },
+        r1: { role: "NO-CODE DEVELOPER & AI AUTOMATION" },
         r2: { role: "LOWCODE DEVELOPER" },
         r3: { role: "PRODUCT BUILDER / TRAINER" },
         r4: { role: "LOWCODE DEVELOPER" },
         r5: { role: "Developer Intern" }
       },
-      banner: "BUILD FAST.<br/>AUTOMATE THE REST."
+      banner: "BUILD FAST.<br/>STAY IN CONTROL."
     },
     contact: {
-      seoTitle: "Contact",
-      seoDesc: "Contact Florian Honoré for your AI automation and product building projects. Book a call or send an email.",
-      status: "STATUS: AVAILABLE",
-      loc: "LOC: PARIS / REMOTE",
-      h1p1: "LET'S WORK",
-      h1p2: "TOGETHER.",
-      s1Title: "01. INTENT",
-      s1Text: "You have a project to automate or build? Book a 30-min call, let's look at what's feasible together.",
+      seoTitle: "Contact · Florian Honoré",
+      seoDesc: "Contact Florian Honoré for your website, app, or AI automation projects. Available for freelance, fixed-term, or permanent roles.",
+      status: "AVAILABLE · FREELANCE / CONTRACT / PERM",
+      loc: "ÎLE-DE-FRANCE · REMOTE",
+      h1p1: "A PROJECT,",
+      h1p2: "A CONSTRAINT?",
+      s1Title: "01. YOUR PROJECT",
+      s1Text: "You have a project to build or automate? Book a 30-minute call: we'll look at what's blocking you and what we can do.",
       btnCall: "BOOK A CALL →",
       writeAlt: "Prefer writing?",
       s2Title: "02. DIRECT",
