@@ -109,13 +109,14 @@ export default function Accueil() {
   return (
     <>
       <SEO 
-        title="Développeur No-Code & Automatisation IA · Florian Honoré" 
-        description="Vous avez un projet à construire mais chaque devis est hors budget ou prend trois mois. Je construis vos sites, apps et automatisations, opérationnel en quelques jours."
+        title="Florian Honoré" 
+        description="Je conçois vos sites, apps et automatisations, avec l'IA là où elle sert vraiment. Opérationnel vite, sans usine à gaz. Disponible en freelance, CDD ou CDI, remote ou Île-de-France."
       />
       <section className="relative min-h-[calc(100vh-80px)] flex flex-col pt-12 md:pt-16 px-6 md:px-12 lg:px-24 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none overflow-hidden mix-blend-multiply">
           <img
             alt="Florian Honoré, développeur no-code et automatisation IA"
+            title="Florian Honoré, développeur no-code et automatisation IA"
             width="1920"
             height="1080"
             className="parallax-bg w-[120%] h-[120%] -translate-x-[10%] -translate-y-[10%] object-cover scale-110"
@@ -182,7 +183,8 @@ export default function Accueil() {
                 <div className="relative border border-outline-variant/30 p-2">
                   <img 
                     src={profilePic}
-                    alt="Florian Honoré"
+                    alt="Florian Honoré · Product Builder"
+                    title="Florian Honoré · Product Builder"
                     width="450"
                     height="550"
                     className="w-[450px] h-[550px] object-cover object-[center_15%] filter grayscale contrast-[1.1] brightness-[1.05] mix-blend-multiply"

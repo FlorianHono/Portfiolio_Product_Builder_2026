@@ -36,7 +36,7 @@ export const translations = {
         cta: "Voir mes projets"
       },
       page: {
-        seoTitle: "Services · Développeur No-Code & Automatisation IA",
+        seoTitle: "Services",
         seoDesc: "Sites, apps, automatisations et agents IA pour les entrepreneurs et équipes qui veulent aller vite sans recruter une équipe tech.",
         headerLabel: "Florian Honoré",
         headerTitle: "SERVICES",
@@ -65,16 +65,16 @@ export const translations = {
     stack: {
       title: "Stack",
       intro: "Des outils choisis pour aller vite, connecter tout, et ne rien casser.",
-      i1: { title: "Automations", desc: "Pour que tes processus tournent sans intervention humaine." },
+      i1: { title: "Automations", desc: "Pour que vos processus tournent sans intervention humaine." },
       i2: { title: "Bases de Données", desc: "La colonne vertébrale de chaque produit que je construis." },
-      i3: { title: "Intelligence Artificielle", desc: "Des LLMs intégrés directement dans tes outils métier." },
+      i3: { title: "Intelligence Artificielle", desc: "Des LLMs intégrés directement dans vos outils métier." },
       i4: { title: "No-Code Front", desc: "Des interfaces pro livrées en semaines, pas en mois." },
       page: {
-        seoTitle: "Stack",
-        seoDesc: "L'arsenal technique de Florian Honoré : outils IA, automatisation, bases de données et frontend no-code.",
+        seoTitle: "Stack · Développeur No-Code & Automatisation IA",
+        seoDesc: "La stack technique de Florian Honoré : automatisations, intelligence artificielle, applications no-code et bases de données.",
         sysTech: "Systèmes & Technologies",
         h1: "L'ARSENAL <br/>TECHNIQUE.",
-        desc: "Sélection rigoureuse d'outils pour la conception de produits scalables et performants.",
+        desc: "Les outils que j'utilise pour livrer vite et solide. Vous n'avez pas besoin de les connaître : mon travail, c'est de choisir le bon pour votre projet.",
         version: "Version 2026.1",
         labels: {
           advanced: "Avancé",
@@ -103,7 +103,7 @@ export const translations = {
       legal: "MENTIONS LÉGALES"
     },
     projets: {
-      seoTitle: "Projets · Sites, apps et automatisations réalisés",
+      seoTitle: "Projets",
       seoDesc: "Projets réels de Florian Honoré : automatisation B2B, reporting data, application web no-code. Résultats concrets pour des fondateurs et des équipes.",
       headerLabel: "Florian Honoré",
       headerTitle: "PROJETS",
@@ -119,7 +119,7 @@ export const translations = {
       ctaTitle: "Votre projet a une douleur précise.<br />Parlons-en."
     },
     apropos: {
-      seoTitle: "À Propos · Florian Honoré, Développeur No-Code & Automatisation IA",
+      seoTitle: "À Propos",
       seoDesc: "Florian Honoré, développeur no-code et automatisation IA. Freelance disponible pour missions, CDD ou CDI en Île-de-France et remote.",
       profileVision: "Profil / Vision",
       h1p1: "DÉVELOPPEUR.",
@@ -140,7 +140,7 @@ export const translations = {
       banner: "CONSTRUIRE VITE.<br/>GARDER LA MAIN."
     },
     contact: {
-      seoTitle: "Contact · Florian Honoré",
+      seoTitle: "Contact",
       seoDesc: "Contactez Florian Honoré pour vos projets de sites, apps ou automatisations IA. Disponible en freelance, CDD ou CDI.",
       status: "DISPONIBLE · FREELANCE / CDD / CDI",
       loc: "ÎLE-DE-FRANCE · REMOTE",
@@ -150,25 +150,31 @@ export const translations = {
       s1Text: "Vous avez un projet à construire ou à automatiser ? Réservez un call de 30 minutes : on regarde ensemble ce qui coince et ce qu'on peut faire.",
       btnCall: "RÉSERVER UN CALL →",
       writeAlt: "Vous préférez écrire ?",
+      formMicrocopy: "Pas encore prêt à réserver un créneau ? Écrivez-moi en deux lignes, je vous réponds vite.",
+      formName: "Votre nom",
+      formEmail: "Votre adresse email",
+      formMessage: "Votre message (en deux lignes...)",
+      formSubmit: "Envoyer le message",
+      formSuccess: "Merci ! Votre message a bien été envoyé.",
       s2Title: "02. DIRECT",
       email: "EMAIL",
       socials: "RÉSEAUX",
       paris: "PARIS<br/>2026"
     },
     methode: {
-      seoTitle: "Méthode",
-      seoDesc: "L'approche de Florian Honoré : prototypage rapide, IA native et focus sur les résultats business.",
-      headerLabel: "Florian Honoré Portfolio",
+      seoTitle: "Méthode · Développeur No-Code & Automatisation IA",
+      seoDesc: "Ma méthode pour concevoir vos sites, apps et automatisations. Prototypage rapide, IA native et focus sur les résultats.",
+      headerLabel: "Florian Honoré",
       headerTitle: "MÉTHODE",
-      headerDesc: "Je ne livre pas des outils, je règle des problèmes. La tech est un moyen, pas une fin.",
+      headerDesc: "Je ne livre pas simplement des outils, je résous vos problèmes. La tech est un moyen, pas une fin.",
       approach: "Approche",
       cards: {
-        proto: { title: "Proto rapide", desc: "De l'idée à quelque chose qui tourne, le plus vite possible. On affine ensuite." },
-        ia: { title: "IA Native", desc: "L'IA est intégrée dès le départ, pas ajoutée en dernier." },
-        lowcode: { title: "Low-code first", desc: "Je choisis l'outil le plus rapide qui fait le job. Pas le plus impressionnant." },
-        veille: { title: "Veille", desc: "Je teste les nouveaux outils en continu. Ce que j'utilise aujourd'hui n'existait pas il y a 2 ans." }
+        proto: { title: "Proto rapide", desc: "De votre idée à un système opérationnel le plus vite possible. Nous affinons ensuite." },
+        ia: { title: "IA Native", desc: "L'IA est intégrée dès le départ dans vos processus, pas ajoutée en dernier recours." },
+        lowcode: { title: "Low-code first", desc: "Je choisis l'outil le plus rapide qui répond à votre besoin. Pas le plus impressionnant." },
+        veille: { title: "Veille", desc: "Je teste les nouveaux outils en continu pour vos projets. Ce que j'utilise aujourd'hui n'existait pas il y a 2 ans." }
       },
-      ctaTitle: "On définit ton projet ensemble ?",
+      ctaTitle: "On définit votre projet ensemble ?",
       ctaBtn: "Me contacter"
     },
     mentions: {
@@ -179,7 +185,7 @@ export const translations = {
       sections: {
         s1: {
           title: "Éditeur du site",
-          lines: ["Florian Honoré", "Activité : Product Builder, Développeur Low-Code & Expert en Automatisation IA", "Statut : Auto-entrepreneur / Freelance", "Localisation : Champigny-sur-Marne, Île-de-France, France", "Téléphone : ", "Email : ", "Site web : "]
+          lines: ["Florian Honoré", "Activité : développement web, no-code et automatisation (prestations de services informatiques)", "Statut : Auto-entrepreneur / Freelance", "Localisation : Champigny-sur-Marne, Île-de-France, France", "Téléphone : ", "Email : ", "Site web : "]
         },
         s2: {
           title: "Hébergement",
@@ -245,7 +251,7 @@ export const translations = {
         cta: "View my projects"
       },
       page: {
-        seoTitle: "Services · No-Code Developer & AI Automation",
+        seoTitle: "Services",
         seoDesc: "Websites, apps, automations, and AI agents for entrepreneurs and teams who want to move fast without hiring a tech team.",
         headerLabel: "Florian Honoré",
         headerTitle: "SERVICES",
@@ -279,11 +285,11 @@ export const translations = {
       i3: { title: "Artificial Intelligence", desc: "LLMs integrated directly into your business tools." },
       i4: { title: "No-Code Front", desc: "Pro interfaces delivered in weeks, not months." },
       page: {
-        seoTitle: "Stack",
-        seoDesc: "Florian Honoré's technical arsenal: AI tools, automation, databases, and no-code frontend.",
+        seoTitle: "Stack · No-Code & AI Automation Developer",
+        seoDesc: "Florian Honoré's tech stack: automations, AI integration, no-code applications, and databases.",
         sysTech: "Systems & Technologies",
         h1: "TECHNICAL <br/>ARSENAL.",
-        desc: "Rigorous selection of tools for designing scalable and high-performance products.",
+        desc: "The tools I use to deliver fast and robust solutions. You don't need to know them: my job is to choose the right one for your project.",
         version: "Version 2026.1",
         labels: {
           advanced: "Advanced",
@@ -312,7 +318,7 @@ export const translations = {
       legal: "LEGAL NOTICE"
     },
     projets: {
-      seoTitle: "Projects · Websites, Apps & Automations",
+      seoTitle: "Projects",
       seoDesc: "Real projects by Florian Honoré: B2B automation, data reporting, no-code web apps. Concrete results for founders and teams.",
       headerLabel: "Florian Honoré",
       headerTitle: "PROJECTS",
@@ -328,7 +334,7 @@ export const translations = {
       ctaTitle: "Your project has a specific pain point.<br />Let's talk."
     },
     apropos: {
-      seoTitle: "About · Florian Honoré, No-Code Developer & AI Automation",
+      seoTitle: "About",
       seoDesc: "Florian Honoré, no-code developer and AI automation specialist. Available for freelance, fixed-term, or permanent roles in Île-de-France and remote.",
       profileVision: "Profile / Vision",
       h1p1: "DEVELOPER.",
@@ -349,7 +355,7 @@ export const translations = {
       banner: "BUILD FAST.<br/>STAY IN CONTROL."
     },
     contact: {
-      seoTitle: "Contact · Florian Honoré",
+      seoTitle: "Contact",
       seoDesc: "Contact Florian Honoré for your website, app, or AI automation projects. Available for freelance, fixed-term, or permanent roles.",
       status: "AVAILABLE · FREELANCE / CONTRACT / PERM",
       loc: "ÎLE-DE-FRANCE · REMOTE",
@@ -359,23 +365,29 @@ export const translations = {
       s1Text: "You have a project to build or automate? Book a 30-minute call: we'll look at what's blocking you and what we can do.",
       btnCall: "BOOK A CALL →",
       writeAlt: "Prefer writing?",
+      formMicrocopy: "Not ready to book a call yet? Drop me a quick message and I'll get back to you shortly.",
+      formName: "Your name",
+      formEmail: "Your email address",
+      formMessage: "Your message (short and sweet...)",
+      formSubmit: "Send message",
+      formSuccess: "Thank you! Your message has been sent.",
       s2Title: "02. DIRECT",
       email: "EMAIL",
       socials: "SOCIALS",
       paris: "PARIS<br/>2026"
     },
     methode: {
-      seoTitle: "Method",
-      seoDesc: "Florian Honoré's approach: rapid prototyping, AI-native, and focus on business results.",
-      headerLabel: "Florian Honoré Portfolio",
+      seoTitle: "Method · No-Code & AI Automation Developer",
+      seoDesc: "My method for designing your websites, apps, and automations. Rapid prototyping, native AI, and business results focus.",
+      headerLabel: "Florian Honoré",
       headerTitle: "METHOD",
-      headerDesc: "I don't deliver tools, I solve problems. Tech is a means, not an end.",
+      headerDesc: "I don't just deliver tools, I solve your problems. Tech is a means, not an end.",
       approach: "Approach",
       cards: {
-        proto: { title: "Rapid Proto", desc: "From an idea to something running, as fast as possible. We refine later." },
-        ia: { title: "AI Native", desc: "AI is integrated from the start, not added last." },
-        lowcode: { title: "Low-code first", desc: "I pick the fastest tool that does the job. Not the most impressive one." },
-        veille: { title: "Watch", desc: "I constantly test new tools. What I use today didn't exist 2 years ago." }
+        proto: { title: "Rapid Proto", desc: "From your idea to an operational system as fast as possible. We refine later." },
+        ia: { title: "AI Native", desc: "AI is integrated from the start in your processes, not added as an afterthought." },
+        lowcode: { title: "Low-code first", desc: "I choose the fastest tool that meets your need. Not the most impressive one." },
+        veille: { title: "Watch", desc: "I constantly test new tools for your projects. What I use today didn't exist 2 years ago." }
       },
       ctaTitle: "Shall we define your project together?",
       ctaBtn: "Contact me"
@@ -388,7 +400,7 @@ export const translations = {
       sections: {
         s1: {
           title: "Website Publisher",
-          lines: ["Florian Honoré", "Activity: Product Builder, Low-Code Developer & AI Automation Expert", "Status: Auto-entrepreneur / Freelance", "Location: Champigny-sur-Marne, Île-de-France, France", "Phone: ", "Email: ", "Website: "]
+          lines: ["Florian Honoré", "Activity: web development, no-code, and automation (IT services)", "Status: Auto-entrepreneur / Freelance", "Location: Champigny-sur-Marne, Île-de-France, France", "Phone: ", "Email: ", "Website: "]
         },
         s2: {
           title: "Hosting",

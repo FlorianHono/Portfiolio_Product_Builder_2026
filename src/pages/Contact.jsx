@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import SEO from '../components/SEO';
 import DinoGame from '../components/DinoGame';
 import { useLanguage } from '../context/LanguageContext';
@@ -6,6 +7,24 @@ import { useTranslation } from '../translations';
 export default function Contact() {
   const { language } = useLanguage();
   const { t } = useTranslation(language);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    
+    const subject = encodeURIComponent(`Contact depuis le portfolio - ${name}`);
+    const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+    
+    setSuccess(true);
+    e.target.reset();
+    setTimeout(() => setSuccess(false), 5000);
+    
+    window.location.href = `mailto:honoreflorian.dwwm@gmail.com?subject=${subject}&body=${body}`;
+  };
 
   return (
     <div className="w-full">
@@ -41,15 +60,71 @@ export default function Contact() {
                 href="https://cal.com/florian-honore-rzzjky/30min" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 md:px-10 py-4 md:py-5 font-space font-bold uppercase tracking-widest text-xs md:text-sm overflow-hidden"
+                className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 md:px-10 py-4 md:py-5 font-space font-bold uppercase tracking-widest text-xs md:text-sm overflow-hidden mb-6"
               >
                 <span className="relative z-10">{t('contact.btnCall')}</span>
                 <div className="absolute inset-0 bg-[#d94a12] -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
               </a>
 
-              <p className="mt-8 font-space text-secondary text-sm break-all">
+              <p className="font-space text-secondary text-sm break-all mb-8">
                 {t('contact.writeAlt')} <a href="mailto:honoreflorian.dwwm@gmail.com" className="text-on-surface font-bold border-b border-primary hover:text-primary transition-colors">honoreflorian.dwwm@gmail.com</a>
               </p>
+
+              {/* Formulaire de contact minimal */}
+              <form onSubmit={handleSubmit} className="mb-12 space-y-6 max-w-xl border-t border-outline-variant/30 pt-8">
+                <p className="font-space text-xs text-secondary leading-relaxed italic">
+                  {t('contact.formMicrocopy')}
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="name" className="font-space text-[10px] uppercase tracking-widest text-secondary font-bold">{t('contact.formName')}</label>
+                    <input
+                      required
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Jean Dupont"
+                      className="w-full bg-surface-container-low border border-outline-variant/30 focus:border-primary p-3 font-space text-sm focus:outline-none transition-colors text-on-surface"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="email" className="font-space text-[10px] uppercase tracking-widest text-secondary font-bold">{t('contact.formEmail')}</label>
+                    <input
+                      required
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="jean.dupont@example.com"
+                      className="w-full bg-surface-container-low border border-outline-variant/30 focus:border-primary p-3 font-space text-sm focus:outline-none transition-colors text-on-surface"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="message" className="font-space text-[10px] uppercase tracking-widest text-secondary font-bold">{t('contact.formMessage')}</label>
+                  <textarea
+                    required
+                    rows="3"
+                    id="message"
+                    name="message"
+                    placeholder="..."
+                    className="w-full bg-surface-container-low border border-outline-variant/30 focus:border-primary p-3 font-space text-sm focus:outline-none transition-colors text-on-surface resize-none"
+                  />
+                </div>
+                <div className="flex items-center gap-6">
+                  <button
+                    type="submit"
+                    className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 py-4 font-space font-bold uppercase tracking-widest text-xs overflow-hidden cursor-pointer"
+                  >
+                    <span className="relative z-10">{t('contact.formSubmit')}</span>
+                    <div className="absolute inset-0 bg-[#d94a12] -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                  </button>
+                  {success && (
+                    <span className="font-space text-xs text-primary font-bold animate-pulse">
+                      {t('contact.formSuccess')}
+                    </span>
+                  )}
+                </div>
+              </form>
 
               <DinoGame />
 

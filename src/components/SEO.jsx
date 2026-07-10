@@ -8,14 +8,17 @@ import { useEffect } from 'react';
  */
 const SEO = ({ title, description }) => {
   useEffect(() => {
-    document.title = `${title} | Florian Honoré - Product Builder`;
+    const baseTitle = "Florian Honoré | Développeur No-Code & Automatisation IA / Intégrateur Web";
+    const finalTitle = !title || title === "Florian Honoré" || title === "Accueil" || title === "Home" ? baseTitle : `${title} | ${baseTitle}`;
     
-    if (description) {
-      updateMetaTag('description', description);
-      updateMetaTag('og:description', description, true);
-    }
+    document.title = finalTitle;
     
-    updateMetaTag('og:title', `${title} | Florian Honoré`, true);
+    const finalDescription = description || "Je conçois vos sites, apps et automatisations, avec l'IA là où elle sert vraiment. Opérationnel vite, sans usine à gaz. Disponible en freelance, CDD ou CDI, remote ou Île-de-France.";
+    
+    updateMetaTag('description', finalDescription);
+    updateMetaTag('og:description', finalDescription, true);
+    
+    updateMetaTag('og:title', finalTitle, true);
     updateMetaTag('og:type', 'website', true);
     updateMetaTag('og:url', window.location.href, true);
 
@@ -23,11 +26,11 @@ const SEO = ({ title, description }) => {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Florian Honoré - Product Builder",
-      "url": "https://florian-honore.com/",
+      "name": "Florian Honoré | Développeur No-Code & Automatisation IA / Intégrateur Web",
+      "url": "https://florianhonore.fr/",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://florian-honore.com/search?q={search_term_string}",
+        "target": "https://florianhonore.fr/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     };
