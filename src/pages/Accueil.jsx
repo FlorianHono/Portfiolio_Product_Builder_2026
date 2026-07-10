@@ -214,28 +214,75 @@ export default function Accueil() {
       </section>
 
       {/* Section : Vous en êtes là ? */}
-      <section className="px-6 md:px-12 lg:px-24 py-20 border-t-[1px] border-outline-variant/30 bg-surface-container-lowest relative z-20">
+      <section className="px-6 md:px-12 lg:px-24 py-24 border-t-[1px] border-outline-variant/30 bg-surface-container-lowest relative z-20">
         <div className="max-w-[1600px] mx-auto">
-          <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface mb-12 reveal">
-            Vous en êtes là ?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+          <div className="max-w-3xl mb-16">
+            <span className="font-space text-xs font-bold text-primary uppercase tracking-[0.3em] mb-4 block">Le constat</span>
+            <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface reveal">
+              Vous en êtes là ?
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {[
-              "J'ai un projet en tête depuis des mois, mais chaque devis de dev est hors budget ou prend trois mois.",
-              "Mon équipe passe ses journées à copier-coller, et des clients passent à la trappe.",
-              "On me dit d'automatiser et d'utiliser l'IA, je ne sais pas par où commencer.",
-              "J'ai déjà fait bricoler un truc, ça a cassé, et personne ne sait le réparer.",
+              {
+                num: "01",
+                title: "Budgets & Délais",
+                desc: "J'ai un projet en tête depuis des mois, mais chaque devis de dev est hors budget ou prend trois mois.",
+                icon: "payments"
+              },
+              {
+                num: "02",
+                title: "Surcharge Manuelle",
+                desc: "Mon équipe passe ses journées à copier-coller, et des clients passent à la trappe.",
+                icon: "sync_alt"
+              },
+              {
+                num: "03",
+                title: "Flou Technique",
+                desc: "On me dit d'automatiser et d'utiliser l'IA, je ne sais pas par où commencer.",
+                icon: "psychology"
+              },
+              {
+                num: "04",
+                title: "Dette Bricolée",
+                desc: "J'ai déjà fait bricoler un système, il a fini par casser, et plus personne ne sait le réparer.",
+                icon: "construction"
+              }
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-5 py-6 border-t border-outline-variant/30 group hover:border-primary transition-colors duration-300">
-                <span className="font-space text-xs font-bold text-primary mt-1 flex-shrink-0">0{i + 1}</span>
-                <p className="font-space text-sm md:text-base text-secondary leading-relaxed group-hover:text-on-surface transition-colors duration-300">{item}</p>
+              <div 
+                key={i} 
+                className="bg-surface-container-low border border-outline-variant/30 p-8 hover:border-primary/50 transition-all duration-300 relative overflow-hidden group hover:-translate-y-1 flex flex-col justify-between min-h-[180px]"
+              >
+                {/* Grand numéro en arrière-plan */}
+                <span className="font-space text-6xl md:text-7xl font-black text-outline-variant/10 group-hover:text-primary/10 transition-colors absolute top-4 right-6 select-none pointer-events-none">
+                  {item.num}
+                </span>
+
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="material-symbols-outlined text-primary text-xl group-hover:scale-110 transition-transform">{item.icon}</span>
+                    <h3 className="font-inter font-bold text-sm md:text-base uppercase tracking-wider text-on-surface">
+                      {item.title}
+                    </h3>
+                  </div>
+                  <p className="font-space text-sm text-secondary leading-relaxed group-hover:text-on-surface transition-colors max-w-xl">
+                    {item.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
-          <div className="mt-12 pt-8 border-t-2 border-primary">
-            <p className="font-inter font-black text-xl md:text-2xl uppercase tracking-tighter text-on-surface">
+
+          <div className="mt-16 p-8 bg-surface-container border-l-4 border-primary relative overflow-hidden reveal">
+            <div className="absolute right-0 bottom-0 opacity-[0.03] pointer-events-none translate-x-12 translate-y-12">
+              <span className="material-symbols-outlined text-[200px] text-primary">key</span>
+            </div>
+            <p className="font-inter font-black text-xl md:text-3xl uppercase tracking-tighter text-on-surface leading-tight">
               C'est exactement ce que je débloque.
-              <span className="text-primary"> Vite, sans usine à gaz, et sans que vous ayez à tout comprendre.</span>
+              <span className="text-primary font-light text-lg md:text-2xl normal-case block mt-2 font-space tracking-normal">
+                Vite, sans usine à gaz, et sans que vous ayez à tout comprendre.
+              </span>
             </p>
           </div>
         </div>
