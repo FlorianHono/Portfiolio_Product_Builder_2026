@@ -227,8 +227,8 @@ export default function Accueil() {
             {[
               {
                 num: "01",
-                title: "Budgets & Délais",
-                desc: "J'ai un projet en tête depuis des mois, mais chaque devis est hors budget, et ça prend trois mois avant même de démarrer.",
+                title: "Impossible de démarrer",
+                desc: "J'ai un projet en tête depuis des mois. Je n'arrive pas à trouver quelqu'un de disponible qui démarre vite, sans que ça traîne sur six mois de négociation.",
                 icon: "payments"
               },
               {

@@ -18,8 +18,8 @@ export const translations = {
       faster: "Vous savez ce qu'il vous faut.",
       noTech: "Vous n'arrivez juste pas à le faire construire.",
       tags: "SITES • APPS • AUTOMATISATIONS • AGENTS IA",
-      description: "Devis hors budget, délais à rallonge, et ce truc bricolé qui a fini par casser sans que personne sache le réparer. Résultat : vous subissez vos outils au lieu de les piloter. Je construis vos sites, vos apps et vos automatisations, avec l'IA branchée là où elle sert vraiment, et des systèmes que votre équipe comprend et garde en main.",
-      descriptionSuffix: "Opérationnel en quelques jours, sans usine à gaz.",
+      description: "Délais à rallonge, personne de disponible pour démarrer vite, et ce truc bricolé qui a fini par casser sans que personne sache le réparer. Résultat : vous subissez vos outils au lieu de les piloter. Je construis vos sites, vos apps et vos automatisations, avec l'IA branchée là où elle sert vraiment, et des systèmes que votre équipe comprend et garde en main.",
+      descriptionSuffix: "En jours pour un site. En semaines pour une app. Jamais en trimestres.",
       clientText: "Ils m'ont fait confiance :"
     },
     services: {
@@ -233,8 +233,8 @@ export const translations = {
       faster: "You know what you need.",
       noTech: "You just can't get it built.",
       tags: "WEBSITES • APPS • AUTOMATIONS • AI AGENTS",
-      description: "Quotes over budget, endless delays, and that makeshift thing that broke and nobody knows how to fix. Result: you're stuck managing your tools instead of running your business. I build your websites, apps, and automations, with AI plugged in where it actually helps, and systems your team understands and owns.",
-      descriptionSuffix: "Operational in a few days, no bloat.",
+      description: "Endless delays, nobody available to start quickly, and that makeshift thing that broke and nobody knows how to fix. Result: you're stuck managing your tools instead of running your business. I build your websites, apps, and automations, with AI plugged in where it actually helps, and systems your team understands and owns.",
+      descriptionSuffix: "Days for a website. Weeks for an app. Never quarters.",
       clientText: "They trusted me:"
     },
     services: {
