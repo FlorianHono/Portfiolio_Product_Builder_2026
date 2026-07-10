@@ -252,7 +252,7 @@ export default function Accueil() {
             ].map((item, i) => (
               <div 
                 key={i} 
-                className="bg-surface-container-low border border-outline-variant/30 p-8 hover:border-primary/50 transition-all duration-300 relative overflow-hidden group hover:-translate-y-1 flex flex-col justify-between min-h-[180px]"
+                className="bg-primary/[0.02] dark:bg-primary/[0.04] border border-primary/10 dark:border-primary/20 p-8 hover:border-primary/50 hover:bg-primary/[0.06] dark:hover:bg-primary/[0.08] transition-all duration-300 relative overflow-hidden group hover:-translate-y-1 flex flex-col justify-between min-h-[180px]"
               >
                 {/* Grand numéro en arrière-plan */}
                 <span className="font-space text-6xl md:text-7xl font-black text-outline-variant/10 group-hover:text-primary/10 transition-colors absolute top-4 right-6 select-none pointer-events-none">
