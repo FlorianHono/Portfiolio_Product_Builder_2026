@@ -11,55 +11,55 @@ export const translations = {
       launch: "Démarrer un projet"
     },
     hero: {
-      title: "Développeur No-Code & Automatisation IA · Florian Honoré",
-      subtitle: "Vous savez ce qu'il vous faut. Vous n'arrivez juste pas à le faire construire.",
-      cta: "Voir mes projets",
-      start: "Démarrer un projet",
-      faster: "Vous savez ce qu'il vous faut.",
-      noTech: "Vous n'arrivez juste pas à le faire construire.",
-      tags: "SITES • APPS • AUTOMATISATIONS • AGENTS IA",
-      description: "Délais à rallonge, personne de disponible pour démarrer vite, et ce truc bricolé qui a fini par casser sans que personne sache le réparer. Résultat : vous subissez vos outils au lieu de les piloter. Je construis vos sites, vos apps et vos automatisations, avec l'IA branchée là où elle sert vraiment, et des systèmes que votre équipe comprend et garde en main.",
-      descriptionSuffix: "En jours pour un site. En semaines pour une app. Jamais en trimestres.",
+      title: "Florian Honoré · Visibilité Web, Automatisations & Outils Sur-Mesure",
+      subtitle: "Attirez plus de clients sur le web et les IA — et libérez votre quotidien des tâches répétitives.",
+      cta: "Voir mes réalisations",
+      start: "Évaluer mes leviers de croissance",
+      faster: "Attirez plus de clients sur le web et les IA.",
+      noTech: "Et libérez votre quotidien des tâches répétitives.",
+      tags: "VISIBILITÉ WEB & IA • AUTOMATISATIONS • APPLICATIONS SUR-MESURE",
+      description: "J'accompagne les entrepreneurs, fondateurs et équipes ambitieuses pour moderniser leur présence en ligne (Google & assistants IA) et automatiser leurs opérations. Résultat : vous développez votre activité sans vous épuiser dans la gestion.",
+      descriptionSuffix: "Visibilité garantie, processus fluides, outils sur-mesure.",
       clientText: "Ils m'ont fait confiance :"
     },
     services: {
       title: "Services",
-      intro: "Pour les entrepreneurs, les équipes qui veulent aller vite, et les PME qui veulent industrialiser sans recruter.",
+      intro: "Trois leviers concrets pour développer votre activité et libérer du temps sans alourdir vos coûts.",
       s1: {
-        title: "Web & Interfaces",
-        desc: "Vous avez besoin d'un site, d'une app ou d'une interface opérationnelle, sans passer par une agence ou recruter un dev. Sites vitrines, Webflow, Framer, WordPress, apps métier. Livré en jours, pas en trimestres.",
-        cta: "Voir mes projets"
+        title: "Visibilité & Acquisition (Web & IA)",
+        desc: "Une présence web haute performance, conçue pour convertir vos visiteurs, optimisée pour le SEO et indexée directement par les assistants IA (ChatGPT, Perplexity).",
+        cta: "Découvrir cette offre"
       },
       s2: {
-        title: "Automatisation & Agents IA",
-        desc: "Votre équipe perd du temps sur des tâches répétitives, ou vous voulez connecter vos outils et intégrer l'IA sans recruter. Workflows n8n / Make, agents IA, intégration Claude et OpenAI dans vos process.",
-        cta: "Voir mes projets"
+        title: "Efficacité & Automatisation",
+        desc: "Des flux autonomes et des assistants IA sur-mesure qui interconnectent tous vos logiciels et exécutent vos processus 24h/24 sans erreur.",
+        cta: "Découvrir cette offre"
       },
       page: {
-        seoTitle: "Services",
-        seoDesc: "Sites, apps, automatisations et agents IA pour les entrepreneurs et équipes qui veulent aller vite sans recruter une équipe tech.",
+        seoTitle: "Services · Visibilité, Automatisation & Outils Sur-Mesure",
+        seoDesc: "Attirez plus de clients avec un site optimisé SEO & IA, et automatisez vos processus pour libérer du temps précieux au quotidien.",
         headerLabel: "Florian Honoré",
         headerTitle: "SERVICES",
-        headerDesc: "Deux blocs, un objectif : que votre projet existe et tourne.",
+        headerDesc: "Trois piliers concrets : attirer des clients, automatiser vos tâches et vous structurer.",
         s1: {
-          pourQui: "Vous avez besoin d'un site, d'une app ou d'une interface opérationnelle, sans passer par une agence ou recruter un développeur.",
-          ceFaireDesc: "Sites vitrines, WordPress, Webflow, Framer. Application web sur mesure, interface métier, back-office. SEO intégré dès le départ, de la maquette à la mise en ligne.",
-          ceRecois: "Un site ou une app livrés, indexés, utilisables dès le premier jour. En jours, pas en trimestres."
+          pourQui: "Vous voulez une présence web moderne qui attire et convertit régulièrement des prospects qualifiés.",
+          ceFaireDesc: "Sites vitrines & plateformes haut de gamme, architecture SEO avancée, indexation par les assistants IA (GEO), parcours utilisateur orientés conversion.",
+          ceRecois: "Une visibilité continue là où vos prospects cherchent (Google & IA) et un flux régulier de demandes de devis."
         },
         s2: {
-          pourQui: "Vos équipes perdent du temps sur des tâches répétitives, ou vous voulez connecter vos outils et intégrer l'IA sans recruter à plein temps.",
-          ceFaireDesc: "Workflows n8n / Make, agents IA, connexion d'APIs (Claude, OpenAI, Brevo, Apollo, GA4…). Prospection automatisée, reporting, traitement de données, emails personnalisés.",
-          ceRecois: "Vos process tournent sans vous. Chaque système est documenté et maintenable par votre équipe. Pas de boîte noire, pas de dépendance."
+          pourQui: "Vous ou vos collaborateurs perdez un temps précieux sur des tâches manuelles et répétitives.",
+          ceFaireDesc: "Workflows autonomes (n8n, Make), assistants IA personnalisés (Claude, OpenAI), interconnexion d'APIs et synchronisation CRM.",
+          ceRecois: "Des dizaines d'heures libres récupérées chaque mois, zéro erreur de saisie et une réactivité maximale avec vos clients."
         },
         labels: {
           pourQui: "Pour qui",
-          ceFaireDesc: "Ce que je construis",
+          ceFaireDesc: "Ce que je mets en place",
           ceRecois: "Ce que vous gagnez",
           outils: "Outils",
           start: "Démarrer un projet"
         },
-        ctaTitle: "Votre projet ne rentre pas<br />dans ces cases ? Racontez-moi ce qui coince.",
-        ctaBtn: "Décrire mon projet"
+        ctaTitle: "Votre besoin est spécifique ?<br />Analysons ensemble votre projet.",
+        ctaBtn: "Échanger sur mon projet"
       }
     },
     stack: {
@@ -94,9 +94,9 @@ export const translations = {
       }
     },
     cta: {
-      title: "VOTRE PROJET<br />ATTEND DEPUIS TROP LONGTEMPS ?",
-      subtitle: "Décrivez-moi ce qui bloque. Je vous réponds sous 24h.",
-      button: "Démarrer maintenant"
+      title: "COMBIEN DE TEMPS ET D'OPPORTUNITÉS<br />PERDEZ-VOUS CHAQUE SEMAINE ?",
+      subtitle: "Réservez un échange stratégique de 30 minutes sans engagement pour identifier vos 3 plus grands leviers d'automatisation et de visibilité.",
+      button: "Évaluer mes leviers de croissance (30 min)"
     },
     footer: {
       rights: "© 2026 FLORIAN HONORÉ. TOUS DROITS RÉSERVÉS.",
@@ -120,24 +120,24 @@ export const translations = {
     },
     apropos: {
       seoTitle: "À Propos",
-      seoDesc: "Florian Honoré, développeur no-code et automatisation IA. Freelance disponible pour missions, CDD ou CDI en Île-de-France et remote.",
+      seoDesc: "Florian Honoré - Expert en visibilité web (SEO & IA), automatisations et solutions sur-mesure.",
       profileVision: "Profil / Vision",
-      h1p1: "DÉVELOPPEUR.",
-      h1p2: "PAS JUSTE EXÉCUTANT.",
-      bio1: "Formé à l'infographie 3D, reconverti au développement web, je me suis spécialisé là où ça va vite et ça crée de la valeur réelle : le no-code, l'automatisation et l'IA appliquée.",
-      bio2: "Depuis 2022, je construis des sites, des apps et des systèmes d'automatisation pour des fondateurs et des équipes qui veulent avancer sans recruter. Je pose l'IA là où elle sert vraiment, et je livre des systèmes que votre équipe comprend et garde en main.",
+      h1p1: "DES RÉSULTATS.",
+      h1p2: "PAS DU JARGON.",
+      bio1: "Après avoir vu tant d'entrepreneurs et d'équipes s'épuiser à jongler entre des outils incomplets ou perdre des marchés faute de visibilité, j'ai décidé de créer ce dont ils ont vraiment besoin : des systèmes digitaux agiles, rentables et faciles à prendre en main.",
+      bio2: "Mon rôle n'est pas d'accumuler de la technologie, mais d'éliminer les frictions dans votre entreprise. Je conçois la visibilité, les automatismes et les applications sur-mesure qui vous permettent d'être recommandé partout (sur Google comme dans les assistants IA) et de vous concentrer sur ce qui crée de la valeur. Mon obsession : que chaque projet livre des résultats mesurables en termes de clients gagnés et de temps libéré.",
       expertiseTitle: "Expertise",
       focusTitle: "Focus",
       history: "Historique",
       exp: "Expériences",
       roles: {
-        r1: { role: "DÉVELOPPEUR NO-CODE & AUTOMATISATION IA" },
+        r1: { role: "EXPERT VISIBILITÉ WEB, AUTOMATISATION & IA" },
         r2: { role: "DÉVELOPPEUR LOWCODE" },
         r3: { role: "PRODUCT BUILDER / FORMATEUR" },
         r4: { role: "DÉVELOPPEUR LOWCODE" },
         r5: { role: "Developer Intern" }
       },
-      banner: "CONSTRUIRE VITE.<br/>GARDER LA MAIN."
+      banner: "CONSTRUIRE VITE.<br/>LIBÉRER DU TEMPS."
     },
     contact: {
       seoTitle: "Contact",
