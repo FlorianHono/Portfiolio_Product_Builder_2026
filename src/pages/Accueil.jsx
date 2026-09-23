@@ -129,36 +129,27 @@ export default function Accueil() {
         <div className="relative z-10 w-full max-w-[1600px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 xl:col-span-8">
-              <span className="font-space text-sm md:text-base tracking-[0.4em] uppercase text-primary mb-5 block font-bold reveal delay-1">
-                Florian Honoré · Développeur No-Code & Automatisation IA
+              <span className="font-space text-xs md:text-sm tracking-[0.3em] uppercase text-primary mb-4 block font-bold reveal delay-1">
+                Florian Honoré · Visibilité Web & Automatisations IA
               </span>
-              <h1 className="font-inter font-black text-huge tracking-[-0.04em] text-on-surface mb-7 drop-shadow-sm reveal delay-2">
+              <h1 className="font-inter font-black text-huge tracking-[-0.04em] text-on-surface mb-6 drop-shadow-sm reveal delay-2">
                 PRODUCT<br />
                 <span className="inline-block relative">
                    BUILDER
                   <div className="absolute -right-4 md:-right-12 top-1/2 w-8 md:w-24 h-[1.5px] md:h-[4px] bg-primary"></div>
                 </span>
               </h1>
-              <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 mb-10">
-                <span className="font-space text-lg md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">{t('hero.faster')}</span>
-                <span className="hidden md:block w-2 h-2 bg-primary"></span>
-                <span className="font-space text-lg md:text-2xl tracking-[0.2em] uppercase text-on-surface font-bold">{t('hero.noTech')}</span>
-              </div>
 
               <div className="max-w-xl">
                 {/* Accroche principale */}
-                <p className="font-space text-2xl md:text-3xl text-on-surface leading-snug mb-4 font-medium reveal delay-3">
+                <p className="font-space text-xl md:text-2xl text-on-surface leading-snug mb-4 font-semibold reveal delay-3">
                   {t('hero.faster')}<br/>
                   <span className="text-primary">{t('hero.noTech')}</span>
                 </p>
-                {/* Sous-accroche tags */}
-                <p className="font-space text-xs md:text-sm tracking-[0.25em] uppercase text-secondary mb-8 font-bold">
-                  {t('hero.tags')}
+                <p className="font-space text-sm md:text-base text-secondary leading-relaxed mb-8 font-light">
+                  {t('hero.description')}
                 </p>
-                <p className="font-space text-base md:text-lg text-secondary leading-relaxed mb-8 font-light">
-                  {t('hero.description')} <span className="text-primary font-medium italic">{t('hero.descriptionSuffix')}</span>
-                </p>
-                <div className="flex flex-col sm:flex-row gap-6 reveal delay-4">
+                <div className="flex flex-col sm:flex-row gap-4 reveal delay-4">
                   <Link to="/projets" className="group relative inline-flex items-center justify-center bg-primary-container text-white px-8 py-3 font-space font-bold uppercase tracking-widest text-xs overflow-hidden">
                     <span className="relative z-10 transition-colors">{t('hero.cta')}</span>
                     <div className="absolute inset-0 bg-[#d94a12] translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>

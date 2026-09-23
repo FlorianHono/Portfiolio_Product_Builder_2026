@@ -11,15 +11,15 @@ export const translations = {
       launch: "Démarrer un projet"
     },
     hero: {
-      title: "Florian Honoré · Visibilité Web, Automatisations & Outils Sur-Mesure",
-      subtitle: "Attirez plus de clients sur le web et les IA — et libérez votre quotidien des tâches répétitives.",
+      title: "Florian Honoré · Visibilité Web & IA · Automatisations",
+      subtitle: "Attirez plus de clients et automatisez votre quotidien.",
       cta: "Voir mes réalisations",
-      start: "Évaluer mes leviers de croissance",
-      faster: "Attirez plus de clients sur le web et les IA.",
-      noTech: "Et libérez votre quotidien des tâches répétitives.",
-      tags: "VISIBILITÉ WEB & IA • AUTOMATISATIONS • APPLICATIONS SUR-MESURE",
-      description: "J'accompagne les entrepreneurs, fondateurs et équipes ambitieuses pour moderniser leur présence en ligne (Google & assistants IA) et automatiser leurs opérations. Résultat : vous développez votre activité sans vous épuiser dans la gestion.",
-      descriptionSuffix: "Visibilité garantie, processus fluides, outils sur-mesure.",
+      start: "Évaluer mes leviers",
+      faster: "Attirez plus de clients sur le web & les IA.",
+      noTech: "Et automatisez votre quotidien.",
+      tags: "VISIBILITÉ WEB & IA • AUTOMATISATIONS • SOLUTIONS SUR-MESURE",
+      description: "Je modernise votre présence en ligne (Google & assistants IA) et automatise vos opérations pour faire grandir votre activité sans alourdir votre gestion.",
+      descriptionSuffix: "",
       clientText: "Ils m'ont fait confiance :"
     },
     services: {
