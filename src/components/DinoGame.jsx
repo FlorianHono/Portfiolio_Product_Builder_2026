@@ -140,7 +140,9 @@ const DinoGame = () => {
     <div className="w-full mt-12 reveal delay-4">
       <div className="flex justify-between items-end mb-6 border-b border-outline-variant/30 pb-4">
         <div>
-          <span className="font-space text-[10px] tracking-[0.2em] uppercase text-primary font-bold block mb-1">03. DÉTENTE</span>
+          <span className="font-space text-[10px] tracking-[0.2em] uppercase text-primary font-bold block mb-1">
+            {t('contact.s3Title')}
+          </span>
           <h3 className="font-inter font-black text-xl uppercase tracking-tighter">Space Runner</h3>
         </div>
         <div className="flex gap-6 font-space text-[10px] tracking-widest uppercase text-secondary">

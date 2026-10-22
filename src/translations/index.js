@@ -211,6 +211,7 @@ export const translations = {
       formSubmit: "Envoyer le message",
       formSuccess: "Merci ! Votre message a bien été envoyé.",
       s2Title: "02. DIRECT",
+      s3Title: "03. DÉTENTE",
       email: "EMAIL",
       socials: "RÉSEAUX",
       paris: "PARIS<br/>2026"
@@ -480,6 +481,7 @@ export const translations = {
       formSubmit: "Send message",
       formSuccess: "Thank you! Your message has been sent.",
       s2Title: "02. DIRECT",
+      s3Title: "03. RELAX",
       email: "EMAIL",
       socials: "SOCIALS",
       paris: "PARIS<br/>2026"
