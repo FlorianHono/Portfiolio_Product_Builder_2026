@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 /**
  * SEO Component for managing page titles and meta descriptions.
@@ -7,13 +8,36 @@ import { useEffect } from 'react';
  * @param {string} [props.description] - The meta description of the page.
  */
 const SEO = ({ title, description }) => {
+  const { language } = useLanguage();
+
   useEffect(() => {
-    const baseTitle = "Florian Honoré | Développeur No-Code & Automatisation IA / Intégrateur Web";
-    const finalTitle = !title || title === "Florian Honoré" || title === "Accueil" || title === "Home" ? baseTitle : `${title} | ${baseTitle}`;
+    const isEn = language === 'en';
+    const baseTitle = isEn
+      ? "Florian Honoré | No-Code Developer & AI Automation / Web Integrator"
+      : "Florian Honoré | Développeur No-Code & Automatisation IA / Intégrateur Web";
+
+    let finalTitle;
+    if (
+      !title || 
+      title === "Florian Honoré" || 
+      title === "Accueil" || 
+      title === "Home" || 
+      title === baseTitle ||
+      title.includes("Florian Honoré | Développeur No-Code") ||
+      title.includes("Florian Honoré | No-Code Developer")
+    ) {
+      finalTitle = baseTitle;
+    } else {
+      finalTitle = `${title} | ${baseTitle}`;
+    }
     
     document.title = finalTitle;
     
-    const finalDescription = description || "Je conçois vos sites, apps et automatisations, avec l'IA là où elle sert vraiment. Opérationnel vite, sans usine à gaz. Disponible en freelance, CDD ou CDI, remote ou Île-de-France.";
+    const defaultDesc = isEn
+      ? "I build your websites, apps, and automations, with AI plugged in where it actually helps. Operational fast, without bloated systems. Available freelance, contract or perm, remote or Paris area."
+      : "Je conçois vos sites, apps et automatisations, avec l'IA là où elle sert vraiment. Opérationnel vite, sans usine à gaz. Disponible en freelance, CDD ou CDI, remote ou Île-de-France.";
+      
+    const finalDescription = description || defaultDesc;
     
     updateMetaTag('description', finalDescription);
     updateMetaTag('og:description', finalDescription, true);
@@ -26,7 +50,9 @@ const SEO = ({ title, description }) => {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Florian Honoré | Développeur No-Code & Automatisation IA / Intégrateur Web",
+      "name": baseTitle,
+      "description": finalDescription,
+      "inLanguage": isEn ? "en" : "fr",
       "url": "https://florianhonore.fr/",
       "potentialAction": {
         "@type": "SearchAction",
@@ -46,7 +72,7 @@ const SEO = ({ title, description }) => {
     
     document.head.appendChild(script);
     
-  }, [title, description]);
+  }, [title, description, language]);
 
   const updateMetaTag = (name, content, isProperty = false) => {
     const attr = isProperty ? 'property' : 'name';

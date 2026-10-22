@@ -10,6 +10,59 @@ export const translations = {
       contact: "Contact",
       launch: "Démarrer un projet"
     },
+    common: {
+      backToTop: "Retour en haut",
+      switchLanguage: "Changer de langue",
+      toggleTheme: "Changer de thème",
+      menu: "Menu",
+      spaceOrClickToJump: "Barre ESPACE ou Clic pour Sauter"
+    },
+    home: {
+      seoTitle: "Florian Honoré | Développeur No-Code & Automatisation IA / Intégrateur Web",
+      seoDesc: "Je conçois vos sites, apps et automatisations, avec l'IA là où elle sert vraiment. Opérationnel vite, sans usine à gaz. Disponible en freelance, CDD ou CDI, remote ou Île-de-France.",
+      heroAlt: "Florian Honoré, développeur no-code et automatisation IA",
+      heroTitle: "Florian Honoré, développeur no-code et automatisation IA",
+      badge: "Florian Honoré · Visibilité Web & Automatisations IA",
+      problems: {
+        label: "Le constat",
+        title: "Vous en êtes là ?",
+        cards: {
+          c1: {
+            title: "Impossible de démarrer",
+            desc: "J'ai un projet en tête depuis des mois. Je n'arrive pas à trouver quelqu'un de disponible qui démarre vite, sans que ça traîne sur six mois de négociation."
+          },
+          c2: {
+            title: "Surcharge Manuelle",
+            desc: "Mon équipe passe ses journées à copier-coller, et des clients passent à la trappe."
+          },
+          c3: {
+            title: "Flou Technique",
+            desc: "On me dit d'automatiser et d'utiliser l'IA, je ne sais pas par où commencer."
+          },
+          c4: {
+            title: "Dette Bricolée",
+            desc: "J'ai déjà fait bricoler un système, il a fini par casser, et plus personne ne sait le réparer."
+          }
+        },
+        bannerTitle: "C'est exactement ce que je débloque.",
+        bannerSubtitle: "Vite, sans usine à gaz, et sans que vous ayez à tout comprendre."
+      },
+      differentiator: {
+        label: "Différenciateur",
+        titlePart1: "L'automatisation",
+        titlePart2: "sans perdre la main.",
+        desc: "Je ne livre pas une boîte noire. Chaque système que je construis est documenté, expliqué, et conçu pour que votre équipe puisse le comprendre et le faire évoluer. L'humain garde la décision là où elle compte : le reste tourne tout seul. Pas de dépendance, pas d'usine à gaz.",
+        item1: "Systèmes documentés",
+        item2: "Maintenables par votre équipe",
+        item3: "Pas de dépendance"
+      },
+      availability: {
+        status: "Disponible",
+        text: "pour missions freelance, CDD ou CDI. Remote ou hybride Île-de-France.",
+        linkedin: "Profil LinkedIn",
+        contact: "Me contacter"
+      }
+    },
     hero: {
       title: "Florian Honoré · Visibilité Web & IA · Automatisations",
       subtitle: "Attirez plus de clients et automatisez votre quotidien.",
@@ -116,7 +169,8 @@ export const translations = {
         p5: { desc: "Problème : pas d'outil collaboratif, les process de formation étaient manuels. Ce que j'ai construit : site multipage sur Framer, formation des équipes à la conception d'applications no-code sur Softr et Airtable." }
       },
       resultLabel: "Résultat",
-      ctaTitle: "Votre projet a une douleur précise.<br />Parlons-en."
+      ctaTitle: "Votre projet a une douleur précise.<br />Parlons-en.",
+      ctaBtn: "Démarrer un projet"
     },
     apropos: {
       seoTitle: "À Propos",
@@ -225,56 +279,109 @@ export const translations = {
       contact: "Contact",
       launch: "Start a project"
     },
+    common: {
+      backToTop: "Back to top",
+      switchLanguage: "Switch language",
+      toggleTheme: "Toggle theme",
+      menu: "Menu",
+      spaceOrClickToJump: "SPACE bar or Click to Jump"
+    },
+    home: {
+      seoTitle: "Florian Honoré | No-Code Developer & AI Automation / Web Integrator",
+      seoDesc: "I build your websites, apps, and automations, with AI plugged in where it actually helps. Operational fast, without bloated systems. Available freelance, contract or perm, remote or Paris area.",
+      heroAlt: "Florian Honoré, no-code developer and AI automation",
+      heroTitle: "Florian Honoré, no-code developer and AI automation",
+      badge: "Florian Honoré · Web Visibility & AI Automations",
+      problems: {
+        label: "The reality",
+        title: "Sound familiar?",
+        cards: {
+          c1: {
+            title: "Unable to start",
+            desc: "I've had a project in mind for months. I can't find someone available who can start quickly, without six months of back-and-forth negotiations."
+          },
+          c2: {
+            title: "Manual Overload",
+            desc: "My team spends their days copy-pasting, and potential clients slip through the cracks."
+          },
+          c3: {
+            title: "Tech Confusion",
+            desc: "Everyone tells me to automate and use AI, but I don't know where to start."
+          },
+          c4: {
+            title: "Fragile Debt",
+            desc: "I already had a system patched together, it ended up breaking, and now nobody knows how to fix it."
+          }
+        },
+        bannerTitle: "This is exactly what I fix.",
+        bannerSubtitle: "Fast, without bloated systems, and without you having to figure out all the tech."
+      },
+      differentiator: {
+        label: "Differentiator",
+        titlePart1: "Automation",
+        titlePart2: "without losing control.",
+        desc: "I don't deliver black boxes. Every system I build is documented, explained, and designed so your team can understand and maintain it. Humans keep the decision where it matters: the rest runs autonomously. No dependency, no bloat.",
+        item1: "Documented systems",
+        item2: "Maintainable by your team",
+        item3: "No vendor lock-in"
+      },
+      availability: {
+        status: "Available",
+        text: "for freelance missions, fixed-term, or permanent roles. Remote or hybrid Paris area.",
+        linkedin: "LinkedIn Profile",
+        contact: "Contact me"
+      }
+    },
     hero: {
-      title: "No-Code Developer & AI Automation · Florian Honoré",
-      subtitle: "You know what you need. You just can't get it built.",
+      title: "Florian Honoré · Web Visibility & AI · Automations",
+      subtitle: "Attract more clients and automate your day-to-day operations.",
       cta: "View my projects",
-      start: "Start a project",
-      faster: "You know what you need.",
-      noTech: "You just can't get it built.",
-      tags: "WEBSITES • APPS • AUTOMATIONS • AI AGENTS",
-      description: "Endless delays, nobody available to start quickly, and that makeshift thing that broke and nobody knows how to fix. Result: you're stuck managing your tools instead of running your business. I build your websites, apps, and automations, with AI plugged in where it actually helps, and systems your team understands and owns.",
-      descriptionSuffix: "Days for a website. Weeks for an app. Never quarters.",
+      start: "Assess my growth levers",
+      faster: "Attract more clients via the web & AI.",
+      noTech: "And automate your day-to-day operations.",
+      tags: "WEB VISIBILITY & AI • AUTOMATIONS • CUSTOM SOLUTIONS",
+      description: "I modernize your online presence (Google & AI assistants) and automate your operations to grow your business without adding management overhead.",
+      descriptionSuffix: "",
       clientText: "They trusted me:"
     },
     services: {
       title: "Services",
-      intro: "For founders, small teams that want to move fast, and businesses looking to scale without hiring.",
+      intro: "Three concrete levers to grow your business and free up time without increasing overhead.",
       s1: {
-        title: "Web & Interfaces",
-        desc: "You need a website, app, or operational interface without going through an agency or hiring a dev. Landing pages, Webflow, Framer, WordPress, custom apps. Delivered in days, not quarters.",
-        cta: "View my projects"
+        title: "Visibility & Acquisition (Web & AI)",
+        desc: "A high-performance web presence designed to convert visitors, optimized for SEO, and directly indexed by AI assistants (ChatGPT, Perplexity).",
+        cta: "Discover this service"
       },
       s2: {
-        title: "Automation & AI Agents",
-        desc: "Your team wastes time on repetitive tasks, or you want to connect your tools and integrate AI without hiring full-time. n8n / Make workflows, AI agents, Claude and OpenAI integration.",
-        cta: "View my projects"
+        title: "Efficiency & Automation",
+        desc: "Autonomous workflows and tailored AI assistants connecting all your software to execute your processes 24/7 without error.",
+        cta: "Discover this service"
       },
       page: {
-        seoTitle: "Services",
-        seoDesc: "Websites, apps, automations, and AI agents for entrepreneurs and teams who want to move fast without hiring a tech team.",
+        seoTitle: "Services · Visibility, Automation & Custom Tools",
+        seoDesc: "Attract more clients with an SEO & AI-optimized website, and automate your workflows to free up valuable time daily.",
         headerLabel: "Florian Honoré",
         headerTitle: "SERVICES",
-        headerDesc: "Two tracks, one goal: your project ships and runs.",
+        headerDesc: "Three concrete pillars: attract clients, automate your tasks, and structure your growth.",
         s1: {
-          pourQui: "You need a website, app, or operational interface without going through an agency or hiring a developer.",
-          ceFaireDesc: "Landing pages, WordPress, Webflow, Framer. Custom web apps, business interfaces, back-offices. SEO built in from day one, from wireframe to launch.",
-          ceRecois: "A website or app that ships, gets indexed, and is usable from day one. In days, not quarters."
+          pourQui: "You want a modern web presence that consistently attracts and converts qualified prospects.",
+          ceFaireDesc: "High-end showcase websites & platforms, advanced SEO architecture, AI assistant indexing (GEO), conversion-driven user journeys.",
+          ceRecois: "Continuous visibility where your prospects search (Google & AI) and a steady stream of quote requests."
         },
         s2: {
-          pourQui: "Your teams lose time on repetitive tasks, or you want to connect your tools and integrate AI without hiring full-time.",
-          ceFaireDesc: "n8n / Make workflows, AI agents, API connections (Claude, OpenAI, Brevo, Apollo, GA4…). Automated outreach, reporting, data processing, personalized emails.",
-          ceRecois: "Your processes run without you. Every system is documented and maintainable by your team. No black box, no dependency."
+          pourQui: "You or your team are losing valuable time on manual and repetitive tasks.",
+          ceFaireDesc: "Autonomous workflows (n8n, Make), tailored AI assistants (Claude, OpenAI), API interconnections, and CRM synchronization.",
+          ceRecois: "Dozens of hours reclaimed every month, zero input errors, and maximum responsiveness with your clients."
         },
         labels: {
-          pourQui: "For who",
-          ceFaireDesc: "What I build",
+          pourQui: "Who it's for",
+          ceFaireDesc: "What I put in place",
           ceRecois: "What you gain",
           outils: "Tools",
           start: "Start a project"
         },
-        ctaTitle: "Your project doesn't fit<br />these boxes? Tell me what's blocking you.",
-        ctaBtn: "Describe my project"
+        ctaTitle: "Have a specific need?<br />Let's analyze your project together.",
+        ctaBtn: "Discuss my project"
       }
     },
     stack: {
@@ -309,9 +416,9 @@ export const translations = {
       }
     },
     cta: {
-      title: "YOUR PROJECT HAS<br />WAITED LONG ENOUGH?",
-      subtitle: "Tell me what's blocking you. I'll get back to you within 24h.",
-      button: "Start now"
+      title: "HOW MUCH TIME AND OPPORTUNITY<br />ARE YOU LOSING EVERY WEEK?",
+      subtitle: "Book a free 30-minute strategic call to identify your top 3 levers for automation and visibility.",
+      button: "Assess my growth levers (30 min)"
     },
     footer: {
       rights: "© 2026 FLORIAN HONORÉ. ALL RIGHTS RESERVED.",
@@ -331,7 +438,8 @@ export const translations = {
         p5: { desc: "Problem: no collaborative tool, training processes were all manual. What I built: multipage site on Framer, team training on building no-code apps on Softr and Airtable." }
       },
       resultLabel: "Result",
-      ctaTitle: "Your project has a specific pain point.<br />Let's talk."
+      ctaTitle: "Your project has a specific pain point.<br />Let's talk.",
+      ctaBtn: "Start a project"
     },
     apropos: {
       seoTitle: "About",
@@ -346,7 +454,7 @@ export const translations = {
       history: "History",
       exp: "Experiences",
       roles: {
-        r1: { role: "NO-CODE DEVELOPER & AI AUTOMATION" },
+        r1: { role: "EXPERT IN WEB VISIBILITY, AUTOMATION & AI" },
         r2: { role: "LOWCODE DEVELOPER" },
         r3: { role: "PRODUCT BUILDER / TRAINER" },
         r4: { role: "LOWCODE DEVELOPER" },
@@ -358,7 +466,7 @@ export const translations = {
       seoTitle: "Contact",
       seoDesc: "Contact Florian Honoré for your website, app, or AI automation projects. Available for freelance, fixed-term, or permanent roles.",
       status: "AVAILABLE · FREELANCE / CONTRACT / PERM",
-      loc: "ÎLE-DE-FRANCE · REMOTE",
+      loc: "PARIS AREA · REMOTE",
       h1p1: "A PROJECT,",
       h1p2: "A CONSTRAINT?",
       s1Title: "01. YOUR PROJECT",
@@ -432,14 +540,24 @@ export const translations = {
 };
 
 export const useTranslation = (language) => {
+  const currentLang = translations[language] ? language : 'fr';
   const t = (key) => {
     const keys = key.split('.');
-    let value = translations[language];
+    let value = translations[currentLang];
     for (const k of keys) {
-      if (value && value[k]) {
+      if (value && value[k] !== undefined) {
         value = value[k];
       } else {
-        return key;
+        // Fallback to fr
+        let fallbackVal = translations.fr;
+        for (const fk of keys) {
+          if (fallbackVal && fallbackVal[fk] !== undefined) {
+            fallbackVal = fallbackVal[fk];
+          } else {
+            return key;
+          }
+        }
+        return fallbackVal;
       }
     }
     return value;

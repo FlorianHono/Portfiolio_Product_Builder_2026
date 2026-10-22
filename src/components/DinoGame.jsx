@@ -1,4 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../translations';
 
 const OBSTACLE_TYPES = [
   { width: 25, height: 45, y: 0, label: 'small' },
@@ -9,6 +11,8 @@ const OBSTACLE_TYPES = [
 ];
 
 const DinoGame = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [gameState, setGameState] = useState('PAUSED');
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
@@ -195,7 +199,7 @@ const DinoGame = () => {
                 {gameState === 'GAME_OVER' ? 'RETRY' : 'START'}
               </button>
               <p className="font-space text-xs text-secondary uppercase tracking-[0.3em] animate-bounce">
-                Barre ESPACE ou Clic pour Sauter
+                {t('common.spaceOrClickToJump')}
               </p>
             </div>
           </div>

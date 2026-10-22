@@ -1,14 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../translations';
 
 /**
  * CTABanner Component for the bottom call-to-action section.
  */
-const CTABanner = ({ title, subtitle, buttonText = "Démarrer un projet", buttonLink = "/contact", href }) => {
+const CTABanner = ({ title, subtitle, buttonText, buttonLink = "/contact", href }) => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+  const resolvedButtonText = buttonText || t('nav.launch') || (language === 'en' ? 'Start a project' : 'Démarrer un projet');
+
   const buttonClasses = "group relative inline-flex items-center justify-center bg-primary-container text-white px-8 py-4 font-space font-bold uppercase tracking-widest text-xs overflow-hidden flex-shrink-0";
   const buttonContent = (
     <>
-      <span className="relative z-10">{buttonText}</span>
+      <span className="relative z-10">{resolvedButtonText}</span>
       <div className="absolute inset-0 bg-[#d94a12] -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
     </>
   );

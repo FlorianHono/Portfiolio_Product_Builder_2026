@@ -109,19 +109,19 @@ export default function Accueil() {
   return (
     <>
       <SEO 
-        title="Florian Honoré" 
-        description="Je conçois vos sites, apps et automatisations, avec l'IA là où elle sert vraiment. Opérationnel vite, sans usine à gaz. Disponible en freelance, CDD ou CDI, remote ou Île-de-France."
+        title={t('home.seoTitle')} 
+        description={t('home.seoDesc')}
       />
       <section className="relative min-h-[calc(100vh-80px)] flex flex-col pt-12 md:pt-16 px-6 md:px-12 lg:px-24 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none overflow-hidden mix-blend-multiply">
           <img
-            alt="Florian Honoré, développeur no-code et automatisation IA"
-            title="Florian Honoré, développeur no-code et automatisation IA"
+            alt={t('home.heroAlt')}
+            title={t('home.heroTitle')}
             width="1920"
             height="1080"
             className="parallax-bg w-[120%] h-[120%] -translate-x-[10%] -translate-y-[10%] object-cover scale-110"
             src="https://lh3.googleusercontent.com/aida/ADBb0ugY6OtPSFzDElhf0BvBRDp7EvIgUp7kE8JP24TPjZf9GXKTgGyLHjRtYPfifez5JVg_4yv0DX-tfXrHLstoPRHGa7Hl8X9zQMnbhmEpu0lpNv1T3IqU216jFyd4b15RqIKfQOhYjC41ruGPFBCeFZAmKpiMHG4ljV6rwDdxgOHRJQaF8rfLci8fCcX9Jt7rt-mVkAz4iu5m1pvcDIRe7_L2Kpgue0MWSMrqKqz2Wp7a7GOKc84OmsgPCA"
-            fetchpriority="high"
+            fetchPriority="high"
             decoding="async"
           />
         </div>
@@ -130,7 +130,7 @@ export default function Accueil() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 xl:col-span-8">
               <span className="font-space text-xs md:text-sm tracking-[0.3em] uppercase text-primary mb-4 block font-bold reveal delay-1">
-                Florian Honoré · Visibilité Web & Automatisations IA
+                {t('home.badge')}
               </span>
               <h1 className="font-inter font-black text-huge tracking-[-0.04em] text-on-surface mb-6 drop-shadow-sm reveal delay-2">
                 PRODUCT<br />
@@ -179,7 +179,7 @@ export default function Accueil() {
                     width="450"
                     height="550"
                     className="w-[450px] h-[550px] object-cover object-[center_15%] filter grayscale contrast-[1.1] brightness-[1.05] mix-blend-multiply"
-                    fetchpriority="high"
+                    fetchPriority="high"
                     decoding="async"
                   />
                   {/* Architectural accents */}
@@ -208,9 +208,9 @@ export default function Accueil() {
       <section className="px-6 md:px-12 lg:px-24 py-24 border-t-[1px] border-outline-variant/30 bg-surface-container-lowest relative z-20">
         <div className="max-w-[1600px] mx-auto">
           <div className="max-w-3xl mb-16">
-            <span className="font-space text-xs font-bold text-primary uppercase tracking-[0.3em] mb-4 block">Le constat</span>
+            <span className="font-space text-xs font-bold text-primary uppercase tracking-[0.3em] mb-4 block">{t('home.problems.label')}</span>
             <h2 className="font-inter font-black text-display-2 uppercase tracking-tighter text-on-surface reveal">
-              Vous en êtes là ?
+              {t('home.problems.title')}
             </h2>
           </div>
 
@@ -218,26 +218,26 @@ export default function Accueil() {
             {[
               {
                 num: "01",
-                title: "Impossible de démarrer",
-                desc: "J'ai un projet en tête depuis des mois. Je n'arrive pas à trouver quelqu'un de disponible qui démarre vite, sans que ça traîne sur six mois de négociation.",
+                title: t('home.problems.cards.c1.title'),
+                desc: t('home.problems.cards.c1.desc'),
                 icon: "payments"
               },
               {
                 num: "02",
-                title: "Surcharge Manuelle",
-                desc: "Mon équipe passe ses journées à copier-coller, et des clients passent à la trappe.",
+                title: t('home.problems.cards.c2.title'),
+                desc: t('home.problems.cards.c2.desc'),
                 icon: "sync_alt"
               },
               {
                 num: "03",
-                title: "Flou Technique",
-                desc: "On me dit d'automatiser et d'utiliser l'IA, je ne sais pas par où commencer.",
+                title: t('home.problems.cards.c3.title'),
+                desc: t('home.problems.cards.c3.desc'),
                 icon: "psychology"
               },
               {
                 num: "04",
-                title: "Dette Bricolée",
-                desc: "J'ai déjà fait bricoler un système, il a fini par casser, et plus personne ne sait le réparer.",
+                title: t('home.problems.cards.c4.title'),
+                desc: t('home.problems.cards.c4.desc'),
                 icon: "construction"
               }
             ].map((item, i) => (
@@ -270,9 +270,9 @@ export default function Accueil() {
               <span className="material-symbols-outlined text-[200px] text-primary">key</span>
             </div>
             <p className="font-inter font-black text-xl md:text-3xl uppercase tracking-tighter text-on-surface leading-tight">
-              C'est exactement ce que je débloque.
+              {t('home.problems.bannerTitle')}
               <span className="text-primary font-light text-lg md:text-2xl normal-case block mt-2 font-space tracking-normal">
-                Vite, sans usine à gaz, et sans que vous ayez à tout comprendre.
+                {t('home.problems.bannerSubtitle')}
               </span>
             </p>
           </div>
@@ -373,21 +373,21 @@ export default function Accueil() {
         <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-2">
             <div className="w-12 h-[2px] bg-primary mb-4"></div>
-            <span className="font-space text-[10px] uppercase tracking-[0.3em] text-primary font-bold">Différenciateur</span>
+            <span className="font-space text-[10px] uppercase tracking-[0.3em] text-primary font-bold">{t('home.differentiator.label')}</span>
           </div>
           <div className="lg:col-span-6">
             <h2 className="font-inter font-black text-2xl md:text-4xl uppercase tracking-tighter text-on-surface mb-6 reveal">
-              L'automatisation<br/><span className="text-primary">sans perdre la main.</span>
+              {t('home.differentiator.titlePart1')}<br/><span className="text-primary">{t('home.differentiator.titlePart2')}</span>
             </h2>
             <p className="font-space text-sm md:text-base text-secondary leading-relaxed">
-              Je ne livre pas une boîte noire. Chaque système que je construis est documenté, expliqué, et conçu pour que votre équipe puisse le comprendre et le faire évoluer. L'humain garde la décision là où elle compte : le reste tourne tout seul. Pas de dépendance, pas d'usine à gaz.
+              {t('home.differentiator.desc')}
             </p>
           </div>
           <div className="lg:col-span-4 flex flex-col gap-4">
             {[
-              { label: "Systèmes documentés", icon: "description" },
-              { label: "Maintenables par votre équipe", icon: "group" },
-              { label: "Pas de dépendance", icon: "link_off" },
+              { label: t('home.differentiator.item1'), icon: "description" },
+              { label: t('home.differentiator.item2'), icon: "group" },
+              { label: t('home.differentiator.item3'), icon: "link_off" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-4 py-4 border-b border-outline-variant/30">
                 <span className="material-symbols-outlined text-primary text-xl">{item.icon}</span>
@@ -404,7 +404,7 @@ export default function Accueil() {
           <div className="flex items-center gap-4">
             <span className="inline-block w-2 h-2 bg-primary rounded-full animate-pulse flex-shrink-0"></span>
             <p className="font-space text-sm text-secondary">
-              <span className="text-on-surface font-bold">Disponible</span> pour missions freelance, CDD ou CDI. Remote ou hybride Île-de-France.
+              <span className="text-on-surface font-bold">{t('home.availability.status')}</span> {t('home.availability.text')}
             </p>
           </div>
           <div className="flex items-center gap-6 flex-shrink-0">
@@ -414,13 +414,13 @@ export default function Accueil() {
               rel="noopener noreferrer"
               className="font-space text-[10px] uppercase tracking-widest text-secondary hover:text-primary transition-colors border-b border-outline-variant/50 hover:border-primary pb-0.5"
             >
-              Profil LinkedIn
+              {t('home.availability.linkedin')}
             </a>
             <Link
               to="/contact"
               className="font-space text-[10px] uppercase tracking-widest text-secondary hover:text-primary transition-colors border-b border-outline-variant/50 hover:border-primary pb-0.5"
             >
-              Me contacter
+              {t('home.availability.contact')}
             </Link>
           </div>
         </div>

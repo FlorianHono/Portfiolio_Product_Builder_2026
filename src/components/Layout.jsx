@@ -76,7 +76,7 @@ function Layout() {
           <button 
             onClick={toggleLanguage}
             className="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant/30 text-on-surface hover:bg-on-surface/5 transition-all duration-300 font-space text-[10px] font-bold uppercase tracking-widest"
-            aria-label="Changer de langue"
+            aria-label={t('common.switchLanguage')}
           >
             {language.toUpperCase()}
           </button>
@@ -84,7 +84,7 @@ function Layout() {
           <button 
             onClick={toggleTheme}
             className="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant/30 text-on-surface hover:bg-on-surface/5 transition-all duration-300"
-            aria-label="Changer de thème"
+            aria-label={t('common.toggleTheme')}
           >
             <span className="material-symbols-outlined !text-[20px]">
               {isDarkMode ? 'light_mode' : 'dark_mode'}
@@ -99,7 +99,7 @@ function Layout() {
           <button 
             onClick={toggleMenu}
             className="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none z-[110]"
-            aria-label="Menu"
+            aria-label={t('common.menu')}
           >
             <span className={`w-full h-0.5 bg-on-surface transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
             <span className={`w-full h-0.5 bg-on-surface transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>

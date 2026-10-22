@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../translations';
 
 const BackToTop = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [isVisible, setIsVisible] = useState(false);
   const [isAboveFooter, setIsAboveFooter] = useState(false);
 
@@ -39,6 +43,8 @@ const BackToTop = () => {
     });
   };
 
+  const label = t('common.backToTop') || (language === 'en' ? 'Back to top' : 'Retour en haut');
+
   return (
     <button
       onClick={scrollToTop}
@@ -47,7 +53,8 @@ const BackToTop = () => {
       } ${
         isAboveFooter ? 'bottom-[120px]' : 'bottom-8'
       } hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-2 group`}
-      aria-label="Retour en haut"
+      aria-label={label}
+      title={label}
     >
       <span className="material-symbols-outlined transition-transform duration-300 group-hover:-translate-y-1">
         north
